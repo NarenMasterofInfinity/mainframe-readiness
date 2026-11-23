@@ -47,7 +47,7 @@ The second run can link to an order rule once the analyst supplies usable materi
 
 A design option should say what it aims to preserve and what remains uncertain. The team might preserve Harbor Stock's file handoff initially, or investigate a different handoff once order and recovery are understood. The assessment supplies the evidence and questions for that choice.
 
-To hand off the work, export the current run and review revision. Use the HTML report for a walkthrough and the JSON file for further analysis. Share the scope, critical gaps, action owners and evidence locations so another reviewer can continue from the same decisions. [Recommendations plan](../plans/03-assessments-and-recommendations.md)
+To hand off the initial result, open the generated reports. After a review, export the selected revision. Use the HTML report for a walkthrough and the JSON file for further analysis. Share the scope, critical gaps, action owners and evidence locations so another reviewer can continue from the same decisions. [Recommendations plan](../plans/03-assessments-and-recommendations.md)
 
 ## Why a hotspot appears near the top
 

@@ -4,7 +4,7 @@
 
 ## Understanding the three assessments
 
-Harbor Stock writes a file that a report consumes. The team can see a dependency in the supplied code while still being unsure when the reporting job runs. The workbench asks three separate questions about this situation.
+Harbor Stock writes a file that a report consumes. The team can see a dependency in the supplied code while still being unsure when the reporting job runs. As soon as the files are processed, the workbench answers three separate questions. The first report can explain both a demonstrated technical difficulty and a decision that still needs a person.
 
 ```text
                     EVIDENCE IN THIS RUN

@@ -96,7 +96,7 @@ The engine counts distinct items and keeps the edge evidence for each shown path
 
 ## What a boundary candidate shows
 
-Boundary exploration is a stretch feature. Start from a job, transaction or reviewed business label. The tool follows supported code links for a short distance and shows a group worth investigating.
+The report can open a proposed group around a discovered entry point. You can also start from another job, transaction or reviewed business label. The tool follows supported code links for a short distance and shows a group worth investigating.
 
 ```text
            PROPOSED GROUP

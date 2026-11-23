@@ -173,3 +173,16 @@ For each action, say which checks the evidence **could affect**. A syntactically
 | Unsupported critical artifact or unreviewed deployment-specific behavior | Defer the design decision pending specialist analysis | Identify the exact artifact or gap and required specialist role. |
 
 Each option carries trigger evidence, behavior to preserve, unanswered prerequisites and a reviewer decision if recorded. A candidate output does not change readiness or marks in the rubric. Architecture choices remain outside the implementation workbench.
+
+## Results before anyone has answered a question
+
+At revision zero, evaluate available source observations immediately. Establish the technical perimeter from the submitted files and list each discovered entry as potentially critical. Derive eligible evidence checks from that technical scope. Display the applicable denominator when it can be established. Unknown business perimeter, review or deployment facts stay visible even for a fully parsed export. Keep security, operations and other domains visible when their applicability is open. Leave the scope and review gates open until their criteria have independent support.
+
+| What the machine sees | What a reviewer receives immediately | Action and possible effect |
+|---|---|---|
+| Two steps bind the same dataset with supported write/read evidence | Batch complexity Moderate, provisional under `BATCH-HANDOFF`. Operations gate Unknown. Both statements and both bindings are available. | Request the scheduler export for those two jobs. A usable row can establish documented order; recovery and actual execution remain separate questions. |
+| A permit command and a matching resource definition, with no proof of effective identity or audit | The report names the declared permission and its scope. Confidence explains which evidence is missing. | Request the applicable access and audit evidence from the security owner. Verify the resource and effective environment before closing the gate. |
+| A data layout has a demonstrated hard-to-preserve feature | Cite the exact field and list entry points using its copybook. The observed complexity signal survives a more complete export. | Ask for representative records and an expected-value comparison. This can improve planning preparedness while leaving the underlying difficulty unchanged. |
+| Only binaries or uninterpretable material | Show inventory, reasons and Unknown for unmeasurable dimensions. The planning result is More evidence required unless an independent critical failure is established. | Name the smallest usable replacement, for example a text export of the JCL member used to run the job. |
+
+A helpful recommendation answers “Which decision is blocked, who could answer it, and what evidence would close it?” Show the lowest-effort relevant request, affected checks and an observable completion test. Receiving new evidence triggers a real reassessment. Show the actual effect, including a newly discovered risk or an unchanged band.

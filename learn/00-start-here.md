@@ -6,14 +6,14 @@
 
 Imagine a warehouse team preparing to move its inventory system. A nightly program writes the day's stock totals. A report program reads those totals. Before planning the move, the team needs to know what links the programs, when the report starts and what happens if the overnight job stops halfway through.
 
-The assessment workbench helps a team answer those questions from material it already has. It reads a local application export, finds the pieces and their connections, and shows which planning questions need more evidence. Detailed migration planning begins with a review of those results. Moving or rewriting the application is a separate project.
+Select the files the team already has. The assessment starts as soon as the selection is committed. It reads a local application export, finds the pieces and their connections, and shows which planning questions need more evidence. Detailed migration planning begins with a review of those results. Moving or rewriting the application is a separate project.
 
 ```text
 WHAT THE TEAM BRINGS           WHAT THE WORKBENCH RETURNS
 
 Programs and job instructions  →  A map of programs, jobs and data
 Schedules and runbooks         →  Findings with links to their sources
-A description of the scope     →  Complexity, confidence and readiness
+Any other resource files      →  Complexity, confidence and readiness
                                  + a list of next actions
 ```
 
@@ -28,7 +28,7 @@ A description of the scope     →  Complexity, confidence and readiness
 A **subject matter expert**, or SME, is someone familiar with the behavior being reviewed. A batch operations SME can confirm restart procedures. A business SME can explain what counts as an accepted permit update.
 
 ```text
-Analyst      → Defines the scope and runs the assessment
+Analyst      → Selects the local resource files
                     │
                     ▼
 Domain SME   → Checks a finding against files and experience
@@ -42,28 +42,28 @@ Planning lead → Reviews the open gates and decides whether to plan
 
 A reviewer can inspect the same source as the analyst. The resulting report gives them a shared record of what they supplied, what they found and what still needs an answer.
 
-## What belongs in the first release
+## What the end-to-end delivery includes
 
 ```text
 REQUIRED
   Local intake → Evidence and graph → Impact
                → Three assessments → Hotspots and gap actions
-               → Review → HTML and JSON → Reuse on a second app
+               → Automatic HTML and JSON → Reuse on a second app
 
-SHOULD HAVE
-  A change table after new evidence, targeted contradiction checks,
-  and candidate migration considerations
+INCLUDED IN THE WALKTHROUGH
+  Add evidence → Reassess → Compare the results
+  Show contradictions and candidate planning considerations
+  Inspect a boundary and compare the two application scopes
 
-STRETCH OR CONDITIONAL
-  Boundary exploration and portfolio view
+CONDITIONAL
   One optional model brief if the execution boundary permits it
 ```
 
-The required demo includes a real reassessment after an evidence change. The richer side-by-side view is a should-have. The baseline operates on a local application export, one active run at a time. If the team records OpenShift as a target, that is a planning assumption.
+The delivery includes a real reassessment and a comparison of the evidence on both runs. The workbench operates on a local application export, one active run at a time. If the team records OpenShift as a target, that is a planning assumption. [End-to-end acceptance checklist](../todo.md#the-single-acceptance-endpoint)
 
 ## Match every plan to a guide
 
-The guides explain the proposed workbench. Each opens with the name of its implementation plan.
+Start with [one selection to a saved result](09-files-to-results.md) for the complete user journey. The guides explain the proposed workbench. Each opens with the name of its implementation plan.
 
 | Plan | Illustrated guide |
 |---|---|
@@ -74,3 +74,4 @@ The guides explain the proposed workbench. Each opens with the name of its imple
 | 04 UI and user journeys | [A walkthrough of the workbench](06-ui-walkthrough.md) |
 | 05 Validation and demo | [How we test and demonstrate it](07-validation-and-demo.md) |
 | 06 Implementation sequence | [How the build fits together](08-implementation-sequence.md) |
+| 07 Files to results | [One selection to a saved result and lessons from existing tools](09-files-to-results.md) |

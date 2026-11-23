@@ -40,12 +40,12 @@ P1  Design original fixtures and test key ──────┘           │
                                                      P7 Test and demo
 ```
 
-P0 and the first fixture cases open the way for executable intake work. Fixture and contract design can begin while the environment is undecided. Rule and UI design can begin from agreed records and sample output. Their full implementation integrates with P4 as the parser and graph contracts stabilize. The optional model brief has a separate decision and follows the baseline.
+P0 and the first fixture cases open the way for executable intake work. Fixture and contract design can begin while the environment is undecided. Rule and UI design can begin from agreed records and sample output. Their full implementation integrates with P4 as the parser and graph contracts stabilize. At the same acceptance endpoint the team records whether the optional model can run in the permitted environment.
 
 ## What gets handed from one part to the next
 
 ```text
-Intake          → Manifest, artifact status and source map
+Intake          → Generated manifest, artifact status and source map
 Extractors      → Definitions, references and diagnostics
 Resolver/graph  → Scoped links, evidence paths and caveats
 Assessment      → Signals, checks, gates, findings and actions
@@ -68,21 +68,21 @@ Ticket: step-scoped DD bindings and typed impact
          Both bindings stay independent
 ```
 
-The plan gives each ticket a dependency, output and merge check. Before a milestone, the team runs the normal entry point and reopens one source-linked finding in the export. The target for a short event is two readable application results with explicit gaps. Optional briefs, richer comparisons and boundary exploration come after the main evidence path works.
+The plan gives each ticket a dependency, output and merge check. Before a milestone, the team runs the normal entry point and reopens one source-linked finding in the export. The target for a short event is two readable application results with explicit gaps. Boundary exploration and comparison use that same evidence path and are checked at the single delivery endpoint. The optional model has its own eligibility check.
 
 ## How another application or analyzer joins
 
 ```text
 New application                  New supported artifact type
       │                                    │
-Provide files + scope settings    Declare coverage and parser rules
+Select the resource files        Declare coverage and parser rules
       │                                    │
 Use the existing workflow         Add positive and negative fixtures
       │                                    │
-Review gaps → export              Emit the existing record types
+Open saved reports                Emit the existing record types
 ```
 
-The reuse handoff shows local setup, supported inputs, a manifest, a typed evidence example, how to review a result and how to export. Cedar Permits demonstrates application reuse. A small new analyzer or rule demonstrates extension through the standard evidence and report contracts. [Implementation tickets](../plans/06-implementation-sequence.md#implementation-tickets-and-integration-tests)
+The reuse handoff shows local setup, the file picker, supported inputs and how to open a generated result. Optional settings and annotations are explained with the review tools. Cedar Permits demonstrates application reuse. A small new analyzer or rule demonstrates extension through the standard evidence and report contracts. [Implementation tickets](../plans/06-implementation-sequence.md#implementation-tickets-and-integration-tests)
 
 ## How different entry points share the result
 

@@ -60,11 +60,11 @@ An evidence record points into the captured state of the input through artifact 
 
 ## Persistence, failure and repeatability
 
-States are `created → inventorying → analyzing → resolving → assessing → completed`, with terminal `failed` and `cancelled`. Partial artifacts can coexist with a completed run. Show their limits in results. A failed or cancelled run exposes stage diagnostics and any inventory already saved, with assessment/export controls disabled. A retry creates a new run linked to the attempt. Make model drafting a separate optional operation on a completed run.
+States are `created → inventorying → analyzing → resolving → assessing → publishing → completed`, with terminal `failed` and `cancelled`. Partial artifacts can coexist with a completed run. Show their limits in results. A failed or cancelled run exposes stage diagnostics and any inventory already saved, with assessment/export controls disabled. A retry creates a new run linked to the attempt. Make model drafting a separate optional operation on a completed run.
 
-Hash original bytes with SHA-256. Build the input fingerprint from the sorted relative paths with artifact hashes, normalized manifest and schema version. Record tool, parser and rubric versions separately. Compare deterministic payloads across reruns with identical versions and inputs, excluding run identity, timestamps and user review events.
+Hash original bytes with SHA-256. Build the input fingerprint from the sorted relative paths with artifact hashes, canonical analysis settings and schema version (omit generated IDs, derived workload observations, wrapper and display label). Record tool, parser and rubric versions separately. Compare deterministic payloads across reruns with identical versions and inputs, excluding run identity, timestamps and user review events.
 
-Implement one local writer per workspace. Commit at stage boundaries. Publish a completed result only after validating internal references and writing its entire report payload. Persist reviewer events with optimistic revision checks so parallel views can detect stale updates. Recompute a reviewed projection from the latest valid events. A new source or config run starts with a fresh review state. Subsequent carry-forward, if added, requires matching subject fingerprint and explicit review.
+Implement one local writer per workspace. Commit at stage boundaries. Publish a completed result only after validating internal references and staging the snapshot, excerpt-free HTML and JSON together and atomically exposing the complete set. Persist reviewer events with optimistic revision checks so parallel views can detect stale updates. Recompute a reviewed projection from the latest valid events. A new source or config run starts with a fresh review state. Subsequent carry-forward, if added, requires matching subject fingerprint and explicit review.
 
 For each proposed review event, require run ID, expected revision, subject ID and fingerprint, decision, reviewer role and rationale. Confirming, correcting or marking an item inapplicable requires evidence or an attested explanation within the reviewer’s scope. Validate that all attached IDs belong to the run. A correction adds a reviewed interpretation. A retraction supersedes the earlier event and restores the applicable prior projection. A stale revision returns the latest revision and leaves the event unapplied.
 
@@ -77,7 +77,7 @@ These are logical operations. Exact invocation depends on the approved environme
 | Operation | Required input | Output and behavior |
 |---|---|---|
 | `inspect` | Source, optional manifest | Inventory preview and validation diagnostics, no assessment |
-| `assess` | Source and effective manifest | Run ID, stage progress, final state or actionable diagnostic |
+| `assess` | Source selection alone | Generate settings, return run ID and progress, publish overview and report paths or a terminal diagnostic |
 | `show` | Run ID | Summary, optional evidence/record lookup and review revision |
 | `export` | Completed run ID, format, destination, excerpt policy | Report path, selected run/review revision, output error if applicable |
 
@@ -175,19 +175,19 @@ return unique direct/indirect nodes, path edge IDs, entry-point summary,
 
 Choose deterministic shortest paths by ordered edge key. Retain distinct parallel edge types in the detail panel. The display labels whether an edge was traversed in its declared or reverse direction. Root self-loops and cycles can be shown as caveats without adding the root to impact counts. Start with depth 2 for explicit impact queries, allow 1–3, cap machine visits at 1,000 nodes and render a first view of 80. Expose separate `visit_limit_reached`, `depth_limit_reached` and `display_limited` flags. When visit-limited, counts describe only the visited set. Pages must retain the same query and revision. Impact examples include selecting STOCK.OUT and tracing both job steps, and selecting a shared copybook and tracing caller programs and their owning entries. Unsupported or disconnected nodes return a reason and an empty impact result.
 
-### Optional boundary candidates
+### Boundary candidates
 
-The user selects a job, transaction or reviewed business label as a seed. Expand across supported code edges in the selected direction to a default depth of two. Keep the proposed membership small, with an initial 30-component cap. Exclude external resources from owned membership and list shared copybooks, datasets and tables as dependencies to review. Never absorb both sides of an unresolved or ambiguous edge. Show internal edges, incoming/outgoing crossing edges by kind, shared readers/writers, unresolved references and data/operational ownership gaps. List the shortest supporting paths.
+Generate an initial candidate from the default evidence-backed entry point during reporting. The reviewer may select another job, transaction or reviewed business label as a seed. Expand across supported code edges in the selected direction to a default depth of two. Keep the proposed membership small, with an initial 30-component cap. Exclude external resources from owned membership and list shared copybooks, datasets and tables as dependencies to review. Never absorb both sides of an unresolved or ambiguous edge. Show internal edges, incoming/outgoing crossing edges by kind, shared readers/writers, unresolved references and data/operational ownership gaps. List the shortest supporting paths.
 
 Compare an analyst-edited membership with the original candidate on the same graph and revision. A one-member group, overlapping candidates, a truncated candidate or an externally written shared store raises a caveat. Preserve both memberships and evidence and require a human decision for any planning use. Use inspectable raw counts and named conditions. Hub degree or internal edges alone do not support a service boundary. Candidate removal or review does not change the underlying graph.
 
 ## Application query boundary
 
-Bind the UI and CLI to the same named local operations. If the approved host warrants a loopback HTTP adapter, these names map to the routes shown. The core layer does not require a service or particular framework.
+Bind the UI and CLI to the same named local operations. Use in-process calls or an approved local file/IPC bridge. The notation below names resources for implementers. Opening a run or report requires no HTTP service.
 
-| Operation | Optional local route | Request and result |
+| Operation | Logical resource notation | Request and result |
 |---|---|---|
-| Start or inspect | `POST /runs`, `POST /intake/inspect` | Local package handle and effective manifest. Return run ID and initial state, or inventory preview and validation issues. |
+| Start or inspect | `POST /runs`, `POST /intake/inspect` | Local selection handle only. The runner builds the effective manifest. Return run ID and initial state, or inventory preview and validation issues. |
 | Poll run | `GET /runs/{id}` | Stage, state, processed/total where known, diagnostics and review revision. |
 | List records | `GET /runs/{id}/inventory`, `/findings`, `/gaps` | Stable filter, sort and page cursor with a revision. Total counts describe the filter. |
 | Show evidence | `GET /runs/{id}/evidence/{evidence_id}` | Locator and verified source excerpt when available. Resolve from an opaque ID within the run. |
@@ -196,7 +196,7 @@ Bind the UI and CLI to the same named local operations. If the approved host war
 | Compare | `GET /runs/{id}/compare?base=...` | Same-application snapshot IDs and selected revisions. Return typed changes, methodology flags and caveats. |
 | Export | `GET /runs/{id}/report` or local CLI output | Format, revision and excerpt policy. Return generated artifact or explicit error. |
 
-Reject unknown filter types or out-of-range depth, missing or cross-run record IDs, access before completion and stale revisions. Return a structured diagnostic containing stable code, stage, user-readable message and recoverability. A local adapter binds only to an approved local interface and never echoes arbitrary absolute paths or source into logs. No authentication or multi-user server behavior is implied.
+Reject unknown filter types or out-of-range depth, missing or cross-run record IDs, access before completion and stale revisions. Return a structured diagnostic containing stable code, stage, user-readable message and recoverability. The process-local adapter omits absolute paths and source text from logs. No authentication or multi-user server behavior is implied.
 
 A selected impact response uses the following shape. This example shows a root dataset with a direct dependent step. The edge ID can be dereferenced to the complete typed relationship and its source spans.
 
@@ -218,6 +218,16 @@ The example is filtered to the report's read path. Counts are unique IDs within 
 
 ## Evidence-delta workflow
 
-Create a child run when source, effective manifest or applicable evidence changes. Capture the base run ID and rule/analyzer versions. For the first milestone, add one evidence file through the regular intake path and rerun deterministically. A next increment compares machine snapshots and explicitly selected review revisions. Match by qualified component/reference keys, rule plus subject for findings, and category plus subject for gaps. Emit added, removed and changed rows for artifact digest, relationship resolution, finding, gate, confidence check and action. Show whether a changed score is attributable to input, review, rules or parser version. Mixed changes remain mixed. A changed methodology shows a comparison caveat and cancels any isolated evidence-effect claim.
+Create a child run when source, effective manifest or applicable evidence changes. Capture the base run ID and rule/analyzer versions. Add one evidence file through regular intake, rerun deterministically and compare machine snapshots and explicitly selected review revisions. Match by qualified component/reference keys, rule plus subject for findings, and category plus subject for gaps. Emit added, removed and changed rows for artifact digest, relationship resolution, finding, gate, confidence check and action. Show whether a changed score is attributable to input, review, rules or parser version. Mixed changes remain mixed. A changed methodology shows a comparison caveat and cancels any isolated evidence-effect claim.
 
 Optional preview uses an isolated child run with an explicitly supplied overlay. Base files stay immutable, same-path replacements require explicit selection, and the UI can keep the preview as a child run or discard it. A cached parser result is safe only with a key that includes bytes, analyzer version, resolved parse settings and any input consulted during extraction. Keep caching after the deterministic baseline. A hypothetical arrival with no supporting bytes can list affected checks but cannot produce a new score.
+
+## Orchestrating a files-only run
+
+The orchestrator accepts a selection handle. UI and CLI call it once. The proposed result bundle lives under `runs/<opaque-run-id>/revisions/0/` and contains `report.html` and `report.json`. Use an application key held in the workspace, independent of the display name or input fingerprint. Fresh submissions start independent contexts. A child uses an explicit parent handle. Compare equivalent fresh runs by canonical content and logical identities after mapping their scoped IDs.
+
+1. Reserve the run locally before returning progress. Bind a submission token to the run so a repeated start event from the same picker submission reopens that run. A deliberately new submission gets a new token.
+2. Freeze the admitted bytes and analysis settings before extraction. Each stage consumes persisted inputs from the preceding stage. On a per-file failure discard that reader’s uncommitted output, retain its diagnostic and continue.
+3. Build an entry-point index after resolution. Summarize each discovered job or transaction with typed reachable programs, reads, writes, screens and external references. Use the bounded impact traversal and stable ordering already specified. Give a flow its entry identifier as its initial title. Mark unsupported segments and show a partial path, or an isolated entry if no edge resolves.
+4. Hand the reviewer a deterministic plain-language path, hotspot and next action generated from the cited edge types and triggered rules. A default root is a navigation choice. It confers no business criticality. Unknown scope never suppresses the coverage matrix.
+5. Stage both default report files before setting completed. Validate all evidence and entity links. A failed publish leaves a diagnostic and no publicly completed pair. Retry into a fresh staging area using the frozen bytes; preserve the relationship to the failed attempt. Local output must live outside the selected source. A reviewed projection uses its own revision and cannot silently replace revision zero.

@@ -7,9 +7,9 @@
 The planned interface lets the analyst move from a planning question to the source that answers it. The graph, table, evidence panel and export all refer to the selected run and review revision. A run header shows that context on every view.
 
 ```text
-Local package → Scope and preview → Assessment overview
+Choose resources → Automatic analysis → Saved assessment
                          │                    │
-                   Correct choices       Pick a question
+                   See progress          Pick a question
                                               │
               ┌────────────┬─────────────────┼───────────┐
               ▼            ▼                 ▼           ▼
@@ -25,7 +25,7 @@ Local package → Scope and preview → Assessment overview
 ```text
 ┌────────────────────────────────────────────────────────────────┐
 │ Harbor Stock  /  Base run  /  Review revision 0                │
-│ Scope: inventory build and report handoff                      │
+│ Scope: submitted resources, business perimeter unreviewed      │
 ├──────────────────────┬────────────────────┬────────────────────┤
 │ Complexity           │ Confidence         │ Readiness          │
 │ Open signals and     │ Open applicable    │ Open critical      │
@@ -59,14 +59,14 @@ On a small screen or when using a keyboard, the analyst can reach the same evide
 ## Recover from an incomplete or changing result
 
 ```text
-Preview has a bad field   → Show the field and keep the scope draft
+A file type is uncertain  → Finish with a visible gap for that file
 Run is still processing   → Reopen the run and restore progress
 Run failed or cancelled   → Show diagnostics and offer a new run
 Review revision changed   → Show the latest result before retrying
 New evidence added        → Open the linked child run
 ```
 
-The gap card shows the evidence needed to close the question. **Add evidence** opens intake with the current manifest as a starting point. **Record review** attaches a person, rationale and evidence to the selected revision. If the comparison screen is built, it can show changed and unchanged results side by side. If boundary review is built, the analyst can inspect a crossing edge from the candidate screen.
+The gap card shows the evidence needed to close the question. **Add evidence** lets you choose just the new resource and starts a child run using the base inputs. **Record review** attaches a person, rationale and evidence to the selected revision. The comparison shows changed and unchanged results side by side. The analyst can inspect a crossing edge from the candidate screen or compare this run with another application from the local application list.
 
 ## Export the same reviewed result
 
@@ -86,4 +86,4 @@ Selected run + review revision
  Scope, three results, evidence locators, gaps and review
 ```
 
-The export preview identifies the chosen revision and whether source excerpts are included. Excerpts are off by default. The report still carries relative paths, locations and evidence IDs. HTML opens locally and the JSON carries the structured records for analysis or another tool. [Report specification](../plans/04-ui-and-user-journeys.md#report-and-stable-export-contract)
+HTML and JSON already exist for revision zero. When saving another copy, the export preview identifies the chosen revision and whether source excerpts are included. Excerpts are off by default. The report still carries relative paths, locations and evidence IDs. HTML opens locally and the JSON carries the structured records for analysis or another tool. [Report specification](../plans/04-ui-and-user-journeys.md#report-and-stable-export-contract)

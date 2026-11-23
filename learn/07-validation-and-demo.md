@@ -84,4 +84,4 @@ The validation plan names the cases and expected outcomes. It also checks wrong 
   │  Stock   │  and impact │  Stock      │  Permits     │         │
 ```
 
-Start from a clean local workspace. Trace one Harbor Stock dependency to its source, open the action it triggers and show what changes with scheduler evidence. Then run Cedar Permits and open the portable report. The final handoff includes actual test results, fixture limits and the reuse guide. [Named acceptance cases](../plans/05-validation-and-demo.md#named-acceptance-cases)
+Start from a clean local workspace and select Harbor Stock’s ordinary files. Let the workbench finish without touching the controls. Both reports should already be saved. Trace one Harbor Stock dependency to its source, open the action it triggers and show what changes when you add one scheduler CSV. Then run Cedar Permits and open the portable report. The final handoff includes actual test results, fixture limits and the reuse guide. [Named acceptance cases](../plans/05-validation-and-demo.md#named-acceptance-cases)

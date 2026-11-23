@@ -4,7 +4,7 @@
 
 ## What the LLM adds
 
-A large language model, or **LLM**, can turn a selected set of technical findings into a draft that a business or operations reviewer can use. Its job is to explain a particular flow, suggest what behavior may matter and ask questions that help the team investigate.
+A large language model, or **LLM**, can turn a selected set of technical findings into a draft that a business or operations reviewer can use. The saved assessment and its plain-language flow summary already exist before a model is considered. An optional brief can explain a particular flow, suggest what behavior may matter and ask questions that help the team investigate.
 
 For example, Harbor Stock's graph can show that a reporting job reads a dataset written by the nightly build. A draft can ask what the new platform should do if a batch run writes only part of the dataset. A batch SME can then check whether that situation is possible and what current recovery procedures require.
 
