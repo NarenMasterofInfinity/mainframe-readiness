@@ -1,4 +1,8 @@
-# External dependencies
+# Plan 00 · Product scope and roadmap
+
+[Implementation plan](../plans/00-product-scope-and-roadmap.md)
+
+## External dependencies
 
 A **dependency** in this guide is something outside the project that it would use to build, run or demonstrate the workbench. That includes a parser, framework, build tool, language runtime or sample application. It also includes the host environment when the license restriction applies to that environment. This meaning differs from the job and data connections discussed in the dependency graph guide.
 
@@ -34,3 +38,31 @@ OUTBOUND SERVICES
 An offline report opens locally with the information it needs in the file. The assessment engine and local UI should also complete the workflow with outbound access blocked after setup. The validation plan calls for observing attempted requests as well as successful ones. A remotely hosted Tachyon endpoint would need an explicit change to the network requirement before use.
 
 The team can continue original fixture authoring, rubric design and UI specification while it resolves the execution environment. That decision is the first work package for a runnable build. The storage choice and optional model can be evaluated separately. [Implementation sequence](../plans/06-implementation-sequence.md) · [Offline validation](../plans/05-validation-and-demo.md)
+
+## Where dependencies enter
+
+```text
+PROJECT MATERIALS            HOST DECISION            OPTIONAL FEATURE
+
+Original analyzers           OS and runtime          Tachyon client
+Original UI and reports      Build tools             Model and endpoint
+Original fixtures            Browser, if used               │
+        │                    Storage choice                 │
+        └──────────────► Check permitted scope ◄─────────────┘
+```
+
+A first-party component is written for this project. It still needs a permitted place to run. The host decision covers what is used to build, run and demo the workbench. The optional brief has a separate endpoint and model decision. The other guides use plain-text diagrams that render in a Markdown code block.
+
+```text
+Set up the permitted local environment
+                   │
+          Block outbound access
+                   │
+        Run → Inspect → Review → Export
+                   │
+        Open HTML without the running app
+                   │
+      Check engine and browser for attempted requests
+```
+
+The validation records whether the workflow completes and whether it attempted outbound access. An offline report can retain evidence locators with text excerpts disabled. [Validation and demo](07-validation-and-demo.md)

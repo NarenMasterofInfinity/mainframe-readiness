@@ -1,4 +1,8 @@
-# Understanding the three assessments
+# Plan 03 · Assessments and recommendations
+
+[Implementation plan](../plans/03-assessments-and-recommendations.md)
+
+## Understanding the three assessments
 
 Harbor Stock writes a file that a report consumes. The team can see a dependency in the supplied code while still being unsure when the reporting job runs. The workbench asks three separate questions about this situation.
 
@@ -45,3 +49,59 @@ Did an applicable gate fail?
 Gates cover scope, dependencies, business and data, operations, security and interfaces, and review completion. If the schedule and recovery procedure are missing in Harbor Stock, the operations gate is **Unknown**. If there is no confirmed failure in another gate, the overall result is **More evidence required**. A reviewed schedule can answer the order question while the missing recovery procedure keeps that gate open.
 
 A complex system can be ready for detailed planning once the relevant evidence and reviews are in place. A quiet-looking graph may still leave a team without enough information to plan. [Assessment rubric](../plans/03-assessments-and-recommendations.md)
+
+## How one source line reaches a result
+
+```text
+Program I/O + job DDs
+          │
+          ▼
+Writer and reader linked to STOCK.OUT in their own steps
+          │
+          ├─ Rule BATCH-HANDOFF finds a Moderate batch signal
+          ├─ Confidence checks ask about schedule and recovery evidence
+          └─ Operations gate asks for reviewed planning prerequisites
+```
+
+A **rubric** is the set of rules used to turn facts into results. The finding should show the rule, the linked evidence and any part the rule could not evaluate. Data uses two lenses, record layouts and databases or stores, within one Data band. The other dimensions cover code, batch, transactions and screens, integrations, security and operations.
+
+```text
+Strongest demonstrated signal      Coverage and review        Band
+
+A material handoff found           Schedule still missing   → Moderate,
+                                                               provisional
+No qualifying signal found         Coverage incomplete      → Unknown
+No qualifying signal found         Coverage reviewed        → Low
+Scope reviewed as inapplicable      Reason recorded          → Not applicable
+```
+
+A high signal elsewhere can raise the overall complexity band. Any applicable provisional or unknown dimension keeps the aggregate provisional. Unreviewed absence of online artifacts cannot establish that transactions and screens are out of scope.
+
+## How to read the confidence count
+
+```text
+Availability       Extraction      Resolution       Review
+    PASS              PASS            PASS           UNKNOWN
+      └─────────────────┴───────────────┴──────────────┘
+                        3 passed / 4 apply
+                              MODERATE
+```
+
+This example assumes usable evidence and an established scope. The proposed rubric gives High when every applicable check passes, Moderate when at least half pass with a remaining gap, and Low when fewer than half pass. An applicable Unknown check stays in the denominator. Reviewed Not applicable leaves it. When there is no usable evidence or a denominator cannot be established, show Unknown. Across dimensions, the lowest known band guides the overall result. If another applicable dimension is Unknown, mark that result provisional.
+
+## Track requirements to the gate they affect
+
+```text
+Write/read handoff                 Critical update
+        │                                 │
+        ▼                                 ▼
+Schedule requirement               Recovery requirement
+Who runs after whom, when?         What if a run stops halfway?
+        │                                 │
+        └───────────────┬─────────────────┘
+                        ▼
+                Operations gate
+        Missing recovery → remains Unknown
+```
+
+A gate also groups other applicable requirements, such as monitoring and ownership. A requirement can have supporting material while its review remains open. In Harbor Stock, usable schedule evidence can improve what is known about the handoff while leaving the planning decision open. [Evidence requirement catalog](../plans/03-assessments-and-recommendations.md#evidence-requirement-catalog)

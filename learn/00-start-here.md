@@ -1,4 +1,8 @@
-# Start here
+# Plan 00 · Product scope and roadmap
+
+[Implementation plan](../plans/00-product-scope-and-roadmap.md)
+
+## Start here
 
 Imagine a warehouse team preparing to move its inventory system. A nightly program writes the day's stock totals. A report program reads those totals. Before planning the move, the team needs to know what links the programs, when the report starts and what happens if the overnight job stops halfway through.
 
@@ -19,17 +23,54 @@ A description of the scope     →  Complexity, confidence and readiness
 
 **Cedar Permits** is the second proposed demo. A person looks up or updates a permit through an online transaction. That gives the same tool a different starting point: a screen, a program and a database table. Both examples are teaching scenarios. File excerpts, names and results in these guides illustrate the design.
 
-## Choose a starting point
+## Who uses the workbench
 
-| If you want to understand… | Read… |
+A **subject matter expert**, or SME, is someone familiar with the behavior being reviewed. A batch operations SME can confirm restart procedures. A business SME can explain what counts as an accepted permit update.
+
+```text
+Analyst      → Defines the scope and runs the assessment
+                    │
+                    ▼
+Domain SME   → Checks a finding against files and experience
+                    │
+                    ▼
+Architect    → Investigates dependencies, risk and possible boundaries
+                    │
+                    ▼
+Planning lead → Reviews the open gates and decides whether to plan
+```
+
+A reviewer can inspect the same source as the analyst. The resulting report gives them a shared record of what they supplied, what they found and what still needs an answer.
+
+## What belongs in the first release
+
+```text
+REQUIRED
+  Local intake → Evidence and graph → Impact
+               → Three assessments → Hotspots and gap actions
+               → Review → HTML and JSON → Reuse on a second app
+
+SHOULD HAVE
+  A change table after new evidence, targeted contradiction checks,
+  and candidate migration considerations
+
+STRETCH OR CONDITIONAL
+  Boundary exploration and portfolio view
+  One optional model brief if the execution boundary permits it
+```
+
+The required demo includes a real reassessment after an evidence change. The richer side-by-side view is a should-have. The baseline operates on a local application export, one active run at a time. If the team records OpenShift as a target, that is a planning assumption.
+
+## Match every plan to a guide
+
+The guides explain the proposed workbench. Each opens with the name of its implementation plan.
+
+| Plan | Illustrated guide |
 |---|---|
-| Which files go in and what comes out | [How the tool works](01-how-the-tool-works.md) |
-| Why a complex system can still be ready for planning | [The three assessments](02-understanding-the-three-assessments.md) |
-| How to check a connection against the original files | [Evidence, dependencies and gaps](03-evidence-dependencies-and-gaps.md) |
-| What a model contributes and what a reviewer checks | [What the LLM adds](04-what-the-llm-adds.md) |
-| How to act on a finding and reassess | [From assessment to action](05-from-assessment-to-action.md) |
-| Which technologies and materials can be used | [External dependencies](external-dependencies.md) |
-
-A **subject matter expert**, or SME, is someone familiar with the behavior being reviewed. A batch operations SME can confirm restart procedures. A business SME can explain what counts as an accepted permit update. The person reviewing the evidence depends on the question.
-
-The guides describe the proposed workbench. For build order and acceptance criteria, see the [implementation sequence](../plans/06-implementation-sequence.md).
+| 00 Product scope and roadmap | This page and [external dependencies](external-dependencies.md) |
+| 01 Core analysis engine | [Evidence and graph](03-evidence-dependencies-and-gaps.md) and [optional model brief](04-what-the-llm-adds.md) |
+| 02 Ingestion and evidence | [How the tool works](01-how-the-tool-works.md) |
+| 03 Assessments and recommendations | [The three assessments](02-understanding-the-three-assessments.md) and [from assessment to action](05-from-assessment-to-action.md) |
+| 04 UI and user journeys | [A walkthrough of the workbench](06-ui-walkthrough.md) |
+| 05 Validation and demo | [How we test and demonstrate it](07-validation-and-demo.md) |
+| 06 Implementation sequence | [How the build fits together](08-implementation-sequence.md) |

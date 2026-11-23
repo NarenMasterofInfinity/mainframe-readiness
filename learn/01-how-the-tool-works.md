@@ -1,4 +1,8 @@
-# How the tool works
+# Plan 02 · Ingestion and evidence
+
+[Implementation plan](../plans/02-ingestion-and-evidence.md)
+
+## How the tool works
 
 An **artifact** is an input file or a supplied record. Harbor Stock's artifacts might include a COBOL program, instructions for running it and a text export of the scheduler. Start with a local folder or ZIP and a short description of the application. That description sets the **scope**, which tells the workbench which parts of the application the team is assessing.
 
@@ -40,3 +44,73 @@ An analyzer of JCL can find that a step names the program `POSTSTK`. A resolver 
 - **Export** produces a local HTML report for reading and JSON for processing. Both carry the run's scope, rule version and evidence references.
 
 A **run** captures one set of inputs and settings. New evidence creates a new run, so a reviewer can reopen the earlier assessment and see why it reached its original result. Cedar Permits uses the same steps, starting from an online transaction and its program or screen instead of an overnight job. [Ingestion plan](../plans/02-ingestion-and-evidence.md)
+
+## A manifest describes the export
+
+A **manifest** is a small settings file. The workbench can also collect these settings from the intake screen. For Harbor Stock, the settings say which folders are in scope, where to look for copybooks, what encoding to use and which kinds of evidence the team expects.
+
+```text
+LOCAL PACKAGE                        EFFECTIVE MANIFEST
+
+src/POSTSTK.cbl      ─┐              Application: Harbor Stock
+copy/STOCKREC.cpy     │              Workload: batch
+jobs/STOCKRUN.jcl     ├─→ Preview ←─  Search: APP, then COMMON
+evidence/runbook.txt ─┘              Scheduler evidence: required
+                                            ↑
+                                     Defaults + analyst choices
+```
+
+Intake first checks whether the bundle can be admitted, then reads the files within the permitted limits. Preview shows what the workbench thinks each file is and why. For example, an extensionless member with a clear JCL signature can be recognized. A conflicting extension and source signature prompts a correction. Nested archives stay in the inventory as unsupported.
+
+```text
+Bundle fails admission             → Reject with a diagnostic
+Bundle passes admission             → Inventory each file
+   ├─ Supported and readable        → Analyze the supported syntax
+   ├─ Some statements unsupported   → Keep supported facts and gaps
+   ├─ Read or decoding fails        → Record the failure
+   └─ Unsupported or excluded      → Keep the status and reason
+```
+
+An expected export can also be missing from the package entirely. The inventory answers “what did we receive?” The coverage view answers “what can we use to assess this scope?”
+
+## A parser can tidy a statement and keep its original location
+
+An analyzer reads the supported statements in one artifact. A **source map** connects its cleaned-up text to the lines in the original file. The numbers below are illustrative.
+
+```text
+PHYSICAL SOURCE           ANALYZER VIEW           EVIDENCE LOCATION
+
+Line 10: statement starts
+                          → one logical statement → original lines 10–11
+Line 11: continuation
+
+Line 12: comment          → ignored as code       → no dependency
+```
+
+This lets an analyst inspect both lines of a continued call. It also keeps a program name inside a comment from appearing as a dependency. An unsupported continuation or an ambiguous fixed/free format is a coverage issue. The tool can still report the other independently supported statements.
+
+## Non-code evidence follows a second path
+
+A typed evidence record says what kind of claim a document supports, which subject it covers and where to look. An analyst can say that a schedule excerpt concerns `STOCKRUN` and `STOCKRPT`, then attach the actual line. A subject matter expert checks whether the rule applies.
+
+```text
+Schedule excerpt           Typed declaration               Review
+
+File + original line  →   Jobs + success condition   →   Check scope,
+                          + source locator               meaning and date
+                                                               │
+                                          Usable / incomplete / disputed
+```
+
+The same pattern works for recovery procedures, data ownership, access and audit rules, interface contracts and evidence of baseline tests. Two conflicting statements stay visible to the reviewer. A file with no relevant claim increases the inventory count while the targeted question remains open.
+
+## A run and its files have separate states
+
+```text
+Created → Inventorying → Analyzing → Resolving → Assessing → Completed
+                            │
+                            ├─ A file is partial → record it and continue
+                            └─ Run stops         → failed or cancelled
+```
+
+A completed run can contain partial files and unknown results. A failed or cancelled run retains diagnostics and has no normal completed report. A retry creates a linked run. [Core run lifecycle](../plans/01-core-analysis-engine.md)
