@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="879" viewBox="0 0 1220 879" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">The assessment in one view</title>
+<desc id="description">An analyst can stop at the saved report. Investigation, reassessment and a Tachyon brief are optional follow-ups. Participants: Analyst (Human), Workbench (Machine), Engine (Machine), Local store (Machine), Model (LLM). 1. Analyst to Workbench: Choose loose files, one folder or one ZIP. 2. Workbench to Engine: Start from the selection alone. 3. Engine to Local store: Freeze the admitted inputs and generated settings. 4. Engine to Engine: Extract evidence, resolve paths and evaluate three assessments. 5. Engine to Local store: Publish revision zero with HTML and JSON together. 6. Local store to Workbench: Return the completed run and both local paths. 7. Workbench to Analyst: Open the results, including blockers and next actions. Optional investigation after completion. 8. Analyst to Workbench: Inspect source, request review or select a flow for a brief. 9. Workbench to Model: Request a draft through the eligible offline Tachyon client. 10. Model to Workbench: Return a draft for citation checks and human review. Optional change of evidence or application. 11. Analyst to Workbench: Add evidence to this run or select another application. 12. Workbench to Engine: Start a linked child or an independent run through the same pipeline.</desc>
+<rect width="1220" height="879" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">The assessment in one view</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">An analyst can stop at the saved report. Investigation, reassessment and a Tachyon brief are optional follow-ups.</text>
+<text x="31" y="140" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="99" width="132.40" height="56" rx="6" fill="#fff0e6"/>
+<text x="560.2" y="120" font-size="12" fill="#8c3c16" font-weight="normal" text-anchor="middle">Human</text>
+<text x="560.2" y="141" font-size="15" fill="#8c3c16" font-weight="bold" text-anchor="middle">Analyst</text>
+<line x1="560.20" y1="155" x2="560.20" y2="862" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="634.40" y="99" width="132.40" height="56" rx="6" fill="#e4f2f5"/>
+<text x="700.6" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="700.6" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Workbench</text>
+<line x1="700.60" y1="155" x2="700.60" y2="862" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="774.80" y="99" width="132.40" height="56" rx="6" fill="#e4f2f5"/>
+<text x="841" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="841" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Engine</text>
+<line x1="841.00" y1="155" x2="841.00" y2="862" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="915.20" y="99" width="132.40" height="56" rx="6" fill="#e4f2f5"/>
+<text x="981.4" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="981.4" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Local store</text>
+<line x1="981.40" y1="155" x2="981.40" y2="862" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="1055.60" y="99" width="132.40" height="56" rx="6" fill="#f2eafb"/>
+<text x="1121.8" y="120" font-size="12" fill="#603e85" font-weight="normal" text-anchor="middle">LLM</text>
+<text x="1121.8" y="141" font-size="15" fill="#603e85" font-weight="bold" text-anchor="middle">Model</text>
+<line x1="1121.80" y1="155" x2="1121.80" y2="862" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<line x1="24" y1="207" x2="1196" y2="207" stroke="#e5e9e9"/>
+<text x="32" y="194" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="194" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Choose loose files, one folder or one ZIP</text>
+<circle cx="560.20" cy="189.00" r="3.3" fill="#8c3c16"/><path d="M 560.20 189.00 H 700.60" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 692.60 184.60 L 700.60 189.00 L 692.60 193.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="243" x2="1196" y2="243" stroke="#e5e9e9"/>
+<text x="32" y="230" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="230" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Start from the selection alone</text>
+<circle cx="700.60" cy="225.00" r="3.3" fill="#144e65"/><path d="M 700.60 225.00 H 841.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 833.00 220.60 L 841.00 225.00 L 833.00 229.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="299" x2="1196" y2="299" stroke="#e5e9e9"/>
+<text x="32" y="276" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="266" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Freeze the admitted inputs and generated</text>
+<text x="63" y="286" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">settings</text>
+<circle cx="841.00" cy="271.00" r="3.3" fill="#144e65"/><path d="M 841.00 271.00 H 981.40" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 973.40 266.60 L 981.40 271.00 L 973.40 275.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="355" x2="1196" y2="355" stroke="#e5e9e9"/>
+<text x="32" y="332" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="322" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Extract evidence, resolve paths and evaluate</text>
+<text x="63" y="342" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">three assessments</text>
+<circle cx="841.00" cy="320.00" r="3.3" fill="#144e65"/><path d="M 841.00 320.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 849.00 329.60 L 841.00 334.00 L 849.00 338.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="411" x2="1196" y2="411" stroke="#e5e9e9"/>
+<text x="32" y="388" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="378" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Publish revision zero with HTML and JSON</text>
+<text x="63" y="398" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">together</text>
+<circle cx="841.00" cy="383.00" r="3.3" fill="#144e65"/><path d="M 841.00 383.00 H 981.40" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 973.40 378.60 L 981.40 383.00 L 973.40 387.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="447" x2="1196" y2="447" stroke="#e5e9e9"/>
+<text x="32" y="434" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="434" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return the completed run and both local paths</text>
+<circle cx="981.40" cy="429.00" r="3.3" fill="#144e65"/><path d="M 981.40 429.00 H 700.60" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 708.60 424.60 L 700.60 429.00 L 708.60 433.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="503" x2="1196" y2="503" stroke="#e5e9e9"/>
+<text x="32" y="480" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="470" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Open the results, including blockers and next</text>
+<text x="63" y="490" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">actions</text>
+<circle cx="700.60" cy="475.00" r="3.3" fill="#144e65"/><path d="M 700.60 475.00 H 560.20" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 568.20 470.60 L 560.20 475.00 L 568.20 479.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="505" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="526" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Optional investigation after completion</text>
+<line x1="24" y1="595" x2="1196" y2="595" stroke="#e5e9e9"/>
+<text x="32" y="572" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="562" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Inspect source, request review or select a flow</text>
+<text x="63" y="582" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">for a brief</text>
+<circle cx="560.20" cy="567.00" r="3.3" fill="#8c3c16"/><path d="M 560.20 567.00 H 700.60" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 692.60 562.60 L 700.60 567.00 L 692.60 571.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="651" x2="1196" y2="651" stroke="#e5e9e9"/>
+<text x="32" y="628" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">09</text>
+<text x="63" y="618" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Request a draft through the eligible offline</text>
+<text x="63" y="638" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Tachyon client</text>
+<circle cx="700.60" cy="623.00" r="3.3" fill="#144e65"/><path d="M 700.60 623.00 H 1121.80" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1113.80 618.60 L 1121.80 623.00 L 1113.80 627.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="707" x2="1196" y2="707" stroke="#e5e9e9"/>
+<text x="32" y="684" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">10</text>
+<text x="63" y="674" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return a draft for citation checks and human</text>
+<text x="63" y="694" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">review</text>
+<circle cx="1121.80" cy="679.00" r="3.3" fill="#603e85"/><path d="M 1121.80 679.00 H 700.60" fill="none" stroke="#603e85" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 708.60 674.60 L 700.60 679.00 L 708.60 683.40" fill="none" stroke="#603e85" stroke-width="2.2"/>
+<rect x="22" y="709" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="730" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Optional change of evidence or application</text>
+<line x1="24" y1="799" x2="1196" y2="799" stroke="#e5e9e9"/>
+<text x="32" y="776" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">11</text>
+<text x="63" y="766" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Add evidence to this run or select another</text>
+<text x="63" y="786" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">application</text>
+<circle cx="560.20" cy="771.00" r="3.3" fill="#8c3c16"/><path d="M 560.20 771.00 H 700.60" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 692.60 766.60 L 700.60 771.00 L 692.60 775.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="855" x2="1196" y2="855" stroke="#e5e9e9"/>
+<text x="32" y="832" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">12</text>
+<text x="63" y="822" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Start a linked child or an independent run</text>
+<text x="63" y="842" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">through the same pipeline</text>
+<circle cx="700.60" cy="827.00" r="3.3" fill="#144e65"/><path d="M 700.60 827.00 H 841.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 833.00 822.60 L 841.00 827.00 L 833.00 831.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+</svg>

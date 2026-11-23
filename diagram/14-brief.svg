@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="1049" viewBox="0 0 1220 1049" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">Ask Tachyon for an optional modernization brief</title>
+<desc id="description">The initial report already exists. A useful proposal might ask how a partial stock-file write is reconciled after restart. The schedule evidence by itself cannot answer that question. Participants: Reviewer (Human), Workbench (Machine), Evidence store (Machine), Tachyon client (Machine), Model (LLM). 1. Reviewer to Workbench: Select a completed flow and request a brief. Unavailable, ineligible or requires a network call. 2. Workbench to Reviewer: Explain that the brief is unavailable and offer the existing evidence-linked summary. Eligible offline client and model. 3. Workbench to Evidence store: Fetch selected path, definitions, evidence IDs, limitations and open questions. 4. Evidence store to Workbench: Return scoped material and flag omitted or truncated context. 5. Workbench to Tachyon client: Send bounded context, structured output request and supported settings. 6. Tachyon client to Model: Invoke the eligible model using chat completions semantics. 7. Model to Tachyon client: Draft candidate behavior, implications, questions and cited premises. 8. Tachyon client to Workbench: Return the draft or a timeout, unavailable-model or invocation error. If the request fails, format is invalid or a citation is missing. 9. Workbench to Reviewer: Show the failure or unsupported claim as such, with the saved report available. If structural and citation checks pass. 10. Workbench to Evidence store: Record draft provenance, settings, supplied IDs and truncation. 11. Workbench to Reviewer: Display the draft beside the actual evidence and remaining uncertainty. 12. Reviewer to Workbench: Check meaning and confirm, correct or leave the candidate open. 13. Workbench to Evidence store: Save the disposition as draft review history.</desc>
+<rect width="1220" height="1049" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">Ask Tachyon for an optional modernization brief</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">The initial report already exists. A useful proposal might ask how a partial stock-file write is reconciled after restart. The</text>
+<text x="29" y="91" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">schedule evidence by itself cannot answer that question.</text>
+<text x="31" y="162" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="121" width="132.40" height="56" rx="6" fill="#fff0e6"/>
+<text x="560.2" y="142" font-size="12" fill="#8c3c16" font-weight="normal" text-anchor="middle">Human</text>
+<text x="560.2" y="163" font-size="15" fill="#8c3c16" font-weight="bold" text-anchor="middle">Reviewer</text>
+<line x1="560.20" y1="177" x2="560.20" y2="1032" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="634.40" y="121" width="132.40" height="56" rx="6" fill="#e4f2f5"/>
+<text x="700.6" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="700.6" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Workbench</text>
+<line x1="700.60" y1="177" x2="700.60" y2="1032" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="774.80" y="121" width="132.40" height="56" rx="6" fill="#e4f2f5"/>
+<text x="841" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="841" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Evidence store</text>
+<line x1="841.00" y1="177" x2="841.00" y2="1032" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="915.20" y="121" width="132.40" height="56" rx="6" fill="#e4f2f5"/>
+<text x="981.4" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="981.4" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Tachyon client</text>
+<line x1="981.40" y1="177" x2="981.40" y2="1032" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="1055.60" y="121" width="132.40" height="56" rx="6" fill="#f2eafb"/>
+<text x="1121.8" y="142" font-size="12" fill="#603e85" font-weight="normal" text-anchor="middle">LLM</text>
+<text x="1121.8" y="163" font-size="15" fill="#603e85" font-weight="bold" text-anchor="middle">Model</text>
+<line x1="1121.80" y1="177" x2="1121.80" y2="1032" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<line x1="24" y1="229" x2="1196" y2="229" stroke="#e5e9e9"/>
+<text x="32" y="216" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="216" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Select a completed flow and request a brief</text>
+<circle cx="560.20" cy="211.00" r="3.3" fill="#8c3c16"/><path d="M 560.20 211.00 H 700.60" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 692.60 206.60 L 700.60 211.00 L 692.60 215.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<rect x="22" y="231" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="252" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Unavailable, ineligible or requires a network call</text>
+<line x1="24" y1="321" x2="1196" y2="321" stroke="#e5e9e9"/>
+<text x="32" y="298" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="288" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Explain that the brief is unavailable and offer</text>
+<text x="63" y="308" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">the existing evidence-linked summary</text>
+<circle cx="700.60" cy="293.00" r="3.3" fill="#144e65"/><path d="M 700.60 293.00 H 560.20" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 568.20 288.60 L 560.20 293.00 L 568.20 297.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="323" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="344" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Eligible offline client and model</text>
+<line x1="24" y1="413" x2="1196" y2="413" stroke="#e5e9e9"/>
+<text x="32" y="390" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="380" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Fetch selected path, definitions, evidence IDs,</text>
+<text x="63" y="400" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">limitations and open questions</text>
+<circle cx="700.60" cy="385.00" r="3.3" fill="#144e65"/><path d="M 700.60 385.00 H 841.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 833.00 380.60 L 841.00 385.00 L 833.00 389.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="469" x2="1196" y2="469" stroke="#e5e9e9"/>
+<text x="32" y="446" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="436" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return scoped material and flag omitted or</text>
+<text x="63" y="456" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">truncated context</text>
+<circle cx="841.00" cy="441.00" r="3.3" fill="#144e65"/><path d="M 841.00 441.00 H 700.60" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 708.60 436.60 L 700.60 441.00 L 708.60 445.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="525" x2="1196" y2="525" stroke="#e5e9e9"/>
+<text x="32" y="502" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="492" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Send bounded context, structured output request</text>
+<text x="63" y="512" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">and supported settings</text>
+<circle cx="700.60" cy="497.00" r="3.3" fill="#144e65"/><path d="M 700.60 497.00 H 981.40" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 973.40 492.60 L 981.40 497.00 L 973.40 501.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="581" x2="1196" y2="581" stroke="#e5e9e9"/>
+<text x="32" y="558" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="548" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Invoke the eligible model using chat</text>
+<text x="63" y="568" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">completions semantics</text>
+<circle cx="981.40" cy="553.00" r="3.3" fill="#144e65"/><path d="M 981.40 553.00 H 1121.80" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1113.80 548.60 L 1121.80 553.00 L 1113.80 557.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="637" x2="1196" y2="637" stroke="#e5e9e9"/>
+<text x="32" y="614" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="604" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Draft candidate behavior, implications,</text>
+<text x="63" y="624" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">questions and cited premises</text>
+<circle cx="1121.80" cy="609.00" r="3.3" fill="#603e85"/><path d="M 1121.80 609.00 H 981.40" fill="none" stroke="#603e85" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 989.40 604.60 L 981.40 609.00 L 989.40 613.40" fill="none" stroke="#603e85" stroke-width="2.2"/>
+<line x1="24" y1="693" x2="1196" y2="693" stroke="#e5e9e9"/>
+<text x="32" y="670" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="660" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return the draft or a timeout, unavailable-</text>
+<text x="63" y="680" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">model or invocation error</text>
+<circle cx="981.40" cy="665.00" r="3.3" fill="#144e65"/><path d="M 981.40 665.00 H 700.60" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 708.60 660.60 L 700.60 665.00 L 708.60 669.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="695" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="716" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">If the request fails, format is invalid or a citation is missing</text>
+<line x1="24" y1="785" x2="1196" y2="785" stroke="#e5e9e9"/>
+<text x="32" y="762" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">09</text>
+<text x="63" y="752" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Show the failure or unsupported claim as such,</text>
+<text x="63" y="772" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">with the saved report available</text>
+<circle cx="700.60" cy="757.00" r="3.3" fill="#144e65"/><path d="M 700.60 757.00 H 560.20" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 568.20 752.60 L 560.20 757.00 L 568.20 761.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="787" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="808" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">If structural and citation checks pass</text>
+<line x1="24" y1="877" x2="1196" y2="877" stroke="#e5e9e9"/>
+<text x="32" y="854" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">10</text>
+<text x="63" y="844" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Record draft provenance, settings, supplied IDs</text>
+<text x="63" y="864" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">and truncation</text>
+<circle cx="700.60" cy="849.00" r="3.3" fill="#144e65"/><path d="M 700.60 849.00 H 841.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 833.00 844.60 L 841.00 849.00 L 833.00 853.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="933" x2="1196" y2="933" stroke="#e5e9e9"/>
+<text x="32" y="910" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">11</text>
+<text x="63" y="900" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Display the draft beside the actual evidence</text>
+<text x="63" y="920" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">and remaining uncertainty</text>
+<circle cx="700.60" cy="905.00" r="3.3" fill="#144e65"/><path d="M 700.60 905.00 H 560.20" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 568.20 900.60 L 560.20 905.00 L 568.20 909.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="989" x2="1196" y2="989" stroke="#e5e9e9"/>
+<text x="32" y="966" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">12</text>
+<text x="63" y="956" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Check meaning and confirm, correct or leave the</text>
+<text x="63" y="976" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">candidate open</text>
+<circle cx="560.20" cy="961.00" r="3.3" fill="#8c3c16"/><path d="M 560.20 961.00 H 700.60" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 692.60 956.60 L 700.60 961.00 L 692.60 965.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="1025" x2="1196" y2="1025" stroke="#e5e9e9"/>
+<text x="32" y="1012" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">13</text>
+<text x="63" y="1012" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Save the disposition as draft review history</text>
+<circle cx="700.60" cy="1007.00" r="3.3" fill="#144e65"/><path d="M 700.60 1007.00 H 841.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 833.00 1002.60 L 841.00 1007.00 L 833.00 1011.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+</svg>

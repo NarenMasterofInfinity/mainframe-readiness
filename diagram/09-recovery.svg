@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="871" viewBox="0 0 1220 871" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">Cancel, interrupt, reopen or retry</title>
+<desc id="description">A retry creates its own attempt. A refresh simply reopens the existing run. An earlier committed result stays available. Participants: Analyst (Human), Workbench (Machine), Runner (Machine), Local store (Machine). View closes or refreshes while work is running. 1. Analyst to Workbench: Reopen the run. 2. Workbench to Local store: Read run ID, last committed stage and progress. 3. Workbench to Analyst: Restore current stage or already-published outcome. User cancels an active run before publication. 4. Analyst to Workbench: Cancel the selected run. 5. Workbench to Runner: Request cancellation at a safe boundary. 6. Runner to Local store: End as cancelled with diagnostics and discard incomplete staging. 7. Runner to Analyst: Return the terminal status. Process stops before commit. 8. Runner to Local store: On startup recover the last valid revision and mark interrupted work failed. 9. Workbench to Analyst: Show the saved receipt and failure stage. User retries a failed or cancelled attempt. 10. Analyst to Runner: Retry admission with a corrected selection, or reuse intact frozen bytes for publication. 11. Runner to Local store: Allocate a linked new run and fresh staging. 12. Runner to Workbench: Resume the applicable stages and publish only on success.</desc>
+<rect width="1220" height="871" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">Cancel, interrupt, reopen or retry</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">A retry creates its own attempt. A refresh simply reopens the existing run. An earlier committed result stays available.</text>
+<text x="31" y="140" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="99" width="167.50" height="56" rx="6" fill="#fff0e6"/>
+<text x="577.75" y="120" font-size="12" fill="#8c3c16" font-weight="normal" text-anchor="middle">Human</text>
+<text x="577.75" y="141" font-size="15" fill="#8c3c16" font-weight="bold" text-anchor="middle">Analyst</text>
+<line x1="577.75" y1="155" x2="577.75" y2="854" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="669.50" y="99" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="753.25" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="753.25" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Workbench</text>
+<line x1="753.25" y1="155" x2="753.25" y2="854" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="845.00" y="99" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="928.75" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="928.75" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Runner</text>
+<line x1="928.75" y1="155" x2="928.75" y2="854" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="1020.50" y="99" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="1104.25" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="1104.25" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Local store</text>
+<line x1="1104.25" y1="155" x2="1104.25" y2="854" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="22" y="173" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="194" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">View closes or refreshes while work is running</text>
+<line x1="24" y1="243" x2="1196" y2="243" stroke="#e5e9e9"/>
+<text x="32" y="230" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="230" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Reopen the run</text>
+<circle cx="577.75" cy="225.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 225.00 H 753.25" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 745.25 220.60 L 753.25 225.00 L 745.25 229.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="279" x2="1196" y2="279" stroke="#e5e9e9"/>
+<text x="32" y="266" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="266" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Read run ID, last committed stage and progress</text>
+<circle cx="753.25" cy="261.00" r="3.3" fill="#144e65"/><path d="M 753.25 261.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 256.60 L 1104.25 261.00 L 1096.25 265.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="335" x2="1196" y2="335" stroke="#e5e9e9"/>
+<text x="32" y="312" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="302" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Restore current stage or already-published</text>
+<text x="63" y="322" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">outcome</text>
+<circle cx="753.25" cy="307.00" r="3.3" fill="#144e65"/><path d="M 753.25 307.00 H 577.75" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 585.75 302.60 L 577.75 307.00 L 585.75 311.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="337" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="358" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">User cancels an active run before publication</text>
+<line x1="24" y1="407" x2="1196" y2="407" stroke="#e5e9e9"/>
+<text x="32" y="394" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="394" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Cancel the selected run</text>
+<circle cx="577.75" cy="389.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 389.00 H 753.25" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 745.25 384.60 L 753.25 389.00 L 745.25 393.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="443" x2="1196" y2="443" stroke="#e5e9e9"/>
+<text x="32" y="430" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="430" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Request cancellation at a safe boundary</text>
+<circle cx="753.25" cy="425.00" r="3.3" fill="#144e65"/><path d="M 753.25 425.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 920.75 420.60 L 928.75 425.00 L 920.75 429.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="499" x2="1196" y2="499" stroke="#e5e9e9"/>
+<text x="32" y="476" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="466" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">End as cancelled with diagnostics and discard</text>
+<text x="63" y="486" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">incomplete staging</text>
+<circle cx="928.75" cy="471.00" r="3.3" fill="#144e65"/><path d="M 928.75 471.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 466.60 L 1104.25 471.00 L 1096.25 475.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="535" x2="1196" y2="535" stroke="#e5e9e9"/>
+<text x="32" y="522" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="522" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return the terminal status</text>
+<circle cx="928.75" cy="517.00" r="3.3" fill="#144e65"/><path d="M 928.75 517.00 H 577.75" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 585.75 512.60 L 577.75 517.00 L 585.75 521.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="537" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="558" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Process stops before commit</text>
+<line x1="24" y1="627" x2="1196" y2="627" stroke="#e5e9e9"/>
+<text x="32" y="604" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="594" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">On startup recover the last valid revision and</text>
+<text x="63" y="614" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">mark interrupted work failed</text>
+<circle cx="928.75" cy="599.00" r="3.3" fill="#144e65"/><path d="M 928.75 599.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 594.60 L 1104.25 599.00 L 1096.25 603.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="663" x2="1196" y2="663" stroke="#e5e9e9"/>
+<text x="32" y="650" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">09</text>
+<text x="63" y="650" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Show the saved receipt and failure stage</text>
+<circle cx="753.25" cy="645.00" r="3.3" fill="#144e65"/><path d="M 753.25 645.00 H 577.75" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 585.75 640.60 L 577.75 645.00 L 585.75 649.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="665" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="686" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">User retries a failed or cancelled attempt</text>
+<line x1="24" y1="755" x2="1196" y2="755" stroke="#e5e9e9"/>
+<text x="32" y="732" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">10</text>
+<text x="63" y="722" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Retry admission with a corrected selection, or</text>
+<text x="63" y="742" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">reuse intact frozen bytes for publication</text>
+<circle cx="577.75" cy="727.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 727.00 H 928.75" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 920.75 722.60 L 928.75 727.00 L 920.75 731.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="791" x2="1196" y2="791" stroke="#e5e9e9"/>
+<text x="32" y="778" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">11</text>
+<text x="63" y="778" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Allocate a linked new run and fresh staging</text>
+<circle cx="928.75" cy="773.00" r="3.3" fill="#144e65"/><path d="M 928.75 773.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 768.60 L 1104.25 773.00 L 1096.25 777.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="847" x2="1196" y2="847" stroke="#e5e9e9"/>
+<text x="32" y="824" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">12</text>
+<text x="63" y="814" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Resume the applicable stages and publish only</text>
+<text x="63" y="834" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">on success</text>
+<circle cx="928.75" cy="819.00" r="3.3" fill="#144e65"/><path d="M 928.75 819.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 761.25 814.60 L 753.25 819.00 L 761.25 823.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="1083" viewBox="0 0 1220 1083" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">Resolve names and assemble scoped flows</title>
+<desc id="description">Read the batch and online branches independently. Both can occur in the same submission. Participants: Resolver (Machine), Evidence store (Machine), Graph (Machine). 1. Resolver to Evidence store: Request definitions, uses and explicit scope or binding evidence. 2. Evidence store to Resolver: Return eligible candidates and their source spans. Literal with one eligible target at the applicable priority. 3. Resolver to Graph: Link the reference to its target and preserve each occurrence. Several targets, no target, external declaration or dynamic operand. 4. Resolver to Graph: Keep ambiguous, missing, declared external, dynamic or unsupported status. Harbor Stock batch path. 5. Resolver to Graph: Bind step to program and match its logical file, DD and actual dataset. 6. Resolver to Graph: Attach supported operation direction separately for each job step. 7. Resolver to Graph: Derive a possible handoff from writer to reader of the same dataset. 8. Resolver to Graph: For two readers, record shared use only. Cedar Permits online path. 9. Resolver to Graph: Join the CSD transaction to its program, then to observed screen and table uses. 10. Resolver to Graph: Link an evidenced interface and expose a dynamic or missing target. Finish the graph. 11. Graph to Graph: Build stable entry paths, cycle-aware indices and boundary candidates. 12. Graph to Evidence store: Save batch, online, mixed or unknown workload with its evidence. 13. Graph to Evidence store: Save links with basis, scope, resolution and supporting evidence.</desc>
+<rect width="1220" height="1083" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">Resolve names and assemble scoped flows</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">Read the batch and online branches independently. Both can occur in the same submission.</text>
+<text x="31" y="140" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="99" width="226.00" height="56" rx="6" fill="#e4f2f5"/>
+<text x="607" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="607" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Resolver</text>
+<line x1="607.00" y1="155" x2="607.00" y2="1066" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="728.00" y="99" width="226.00" height="56" rx="6" fill="#e4f2f5"/>
+<text x="841" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="841" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Evidence store</text>
+<line x1="841.00" y1="155" x2="841.00" y2="1066" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="962.00" y="99" width="226.00" height="56" rx="6" fill="#e4f2f5"/>
+<text x="1075" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="1075" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Graph</text>
+<line x1="1075.00" y1="155" x2="1075.00" y2="1066" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<line x1="24" y1="227" x2="1196" y2="227" stroke="#e5e9e9"/>
+<text x="32" y="204" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="194" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Request definitions, uses and explicit scope or</text>
+<text x="63" y="214" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">binding evidence</text>
+<circle cx="607.00" cy="199.00" r="3.3" fill="#144e65"/><path d="M 607.00 199.00 H 841.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 833.00 194.60 L 841.00 199.00 L 833.00 203.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="283" x2="1196" y2="283" stroke="#e5e9e9"/>
+<text x="32" y="260" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="250" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return eligible candidates and their source</text>
+<text x="63" y="270" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">spans</text>
+<circle cx="841.00" cy="255.00" r="3.3" fill="#144e65"/><path d="M 841.00 255.00 H 607.00" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 615.00 250.60 L 607.00 255.00 L 615.00 259.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="285" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="306" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Literal with one eligible target at the applicable priority</text>
+<line x1="24" y1="375" x2="1196" y2="375" stroke="#e5e9e9"/>
+<text x="32" y="352" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="342" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Link the reference to its target and preserve</text>
+<text x="63" y="362" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">each occurrence</text>
+<circle cx="607.00" cy="347.00" r="3.3" fill="#144e65"/><path d="M 607.00 347.00 H 1075.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1067.00 342.60 L 1075.00 347.00 L 1067.00 351.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="377" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="398" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Several targets, no target, external declaration or dynamic operand</text>
+<line x1="24" y1="467" x2="1196" y2="467" stroke="#e5e9e9"/>
+<text x="32" y="444" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="434" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Keep ambiguous, missing, declared external,</text>
+<text x="63" y="454" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">dynamic or unsupported status</text>
+<circle cx="607.00" cy="439.00" r="3.3" fill="#144e65"/><path d="M 607.00 439.00 H 1075.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1067.00 434.60 L 1075.00 439.00 L 1067.00 443.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="469" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="490" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Harbor Stock batch path</text>
+<line x1="24" y1="559" x2="1196" y2="559" stroke="#e5e9e9"/>
+<text x="32" y="536" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="526" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Bind step to program and match its logical</text>
+<text x="63" y="546" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">file, DD and actual dataset</text>
+<circle cx="607.00" cy="531.00" r="3.3" fill="#144e65"/><path d="M 607.00 531.00 H 1075.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1067.00 526.60 L 1075.00 531.00 L 1067.00 535.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="615" x2="1196" y2="615" stroke="#e5e9e9"/>
+<text x="32" y="592" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="582" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Attach supported operation direction separately</text>
+<text x="63" y="602" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">for each job step</text>
+<circle cx="607.00" cy="587.00" r="3.3" fill="#144e65"/><path d="M 607.00 587.00 H 1075.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1067.00 582.60 L 1075.00 587.00 L 1067.00 591.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="671" x2="1196" y2="671" stroke="#e5e9e9"/>
+<text x="32" y="648" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="638" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Derive a possible handoff from writer to reader</text>
+<text x="63" y="658" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">of the same dataset</text>
+<circle cx="607.00" cy="643.00" r="3.3" fill="#144e65"/><path d="M 607.00 643.00 H 1075.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1067.00 638.60 L 1075.00 643.00 L 1067.00 647.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="707" x2="1196" y2="707" stroke="#e5e9e9"/>
+<text x="32" y="694" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="694" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">For two readers, record shared use only</text>
+<circle cx="607.00" cy="689.00" r="3.3" fill="#144e65"/><path d="M 607.00 689.00 H 1075.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1067.00 684.60 L 1075.00 689.00 L 1067.00 693.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="709" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="730" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Cedar Permits online path</text>
+<line x1="24" y1="799" x2="1196" y2="799" stroke="#e5e9e9"/>
+<text x="32" y="776" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">09</text>
+<text x="63" y="766" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Join the CSD transaction to its program, then</text>
+<text x="63" y="786" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">to observed screen and table uses</text>
+<circle cx="607.00" cy="771.00" r="3.3" fill="#144e65"/><path d="M 607.00 771.00 H 1075.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1067.00 766.60 L 1075.00 771.00 L 1067.00 775.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="855" x2="1196" y2="855" stroke="#e5e9e9"/>
+<text x="32" y="832" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">10</text>
+<text x="63" y="822" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Link an evidenced interface and expose a</text>
+<text x="63" y="842" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">dynamic or missing target</text>
+<circle cx="607.00" cy="827.00" r="3.3" fill="#144e65"/><path d="M 607.00 827.00 H 1075.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1067.00 822.60 L 1075.00 827.00 L 1067.00 831.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="857" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="878" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Finish the graph</text>
+<line x1="24" y1="947" x2="1196" y2="947" stroke="#e5e9e9"/>
+<text x="32" y="924" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">11</text>
+<text x="63" y="914" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Build stable entry paths, cycle-aware indices</text>
+<text x="63" y="934" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">and boundary candidates</text>
+<circle cx="1075.00" cy="912.00" r="3.3" fill="#144e65"/><path d="M 1075.00 912.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1083.00 921.60 L 1075.00 926.00 L 1083.00 930.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="1003" x2="1196" y2="1003" stroke="#e5e9e9"/>
+<text x="32" y="980" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">12</text>
+<text x="63" y="970" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Save batch, online, mixed or unknown workload</text>
+<text x="63" y="990" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">with its evidence</text>
+<circle cx="1075.00" cy="975.00" r="3.3" fill="#144e65"/><path d="M 1075.00 975.00 H 841.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 849.00 970.60 L 841.00 975.00 L 849.00 979.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="1059" x2="1196" y2="1059" stroke="#e5e9e9"/>
+<text x="32" y="1036" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">13</text>
+<text x="63" y="1026" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Save links with basis, scope, resolution and</text>
+<text x="63" y="1046" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">supporting evidence</text>
+<circle cx="1075.00" cy="1031.00" r="3.3" fill="#144e65"/><path d="M 1075.00 1031.00 H 841.00" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 849.00 1026.60 L 841.00 1031.00 L 849.00 1035.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+</svg>

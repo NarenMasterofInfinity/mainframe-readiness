@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="753" viewBox="0 0 1220 753" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">One-time environment decision</title>
+<desc id="description">This is the implementation team&#x27;s setup. The analyst encounters the resource picker when the workbench is installed in a permitted environment. Participants: Build lead (Human), Local host (Machine), QA reviewer (Human), Workbench (Machine). 1. Build lead to Local host: Inspect the exact host, runtime, build, UI and storage components. 2. Build lead to Build lead: Record the permitted boundary and component origins. If a compatible host is established. 3. Build lead to Local host: Select one eligible store and install first-party assets. 4. QA reviewer to Workbench: Exercise picker, CLI and reports with network access denied. 5. Workbench to QA reviewer: Return local results and recorded attempts for inspection. 6. QA reviewer to Build lead: Record setup and offline evidence for the demo. If the boundary is unresolved. 7. Build lead to Build lead: Keep executable delivery open and continue original fixture and contract work. Independent model eligibility decision. 8. Build lead to Workbench: Leave the brief disabled unless client, model and transport meet all restrictions.</desc>
+<rect width="1220" height="753" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">One-time environment decision</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">This is the implementation team&#x27;s setup. The analyst encounters the resource picker when the workbench is installed in a</text>
+<text x="29" y="91" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">permitted environment.</text>
+<text x="31" y="162" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="121" width="167.50" height="56" rx="6" fill="#fff0e6"/>
+<text x="577.75" y="142" font-size="12" fill="#8c3c16" font-weight="normal" text-anchor="middle">Human</text>
+<text x="577.75" y="163" font-size="15" fill="#8c3c16" font-weight="bold" text-anchor="middle">Build lead</text>
+<line x1="577.75" y1="177" x2="577.75" y2="736" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="669.50" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="753.25" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="753.25" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Local host</text>
+<line x1="753.25" y1="177" x2="753.25" y2="736" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="845.00" y="121" width="167.50" height="56" rx="6" fill="#fff0e6"/>
+<text x="928.75" y="142" font-size="12" fill="#8c3c16" font-weight="normal" text-anchor="middle">Human</text>
+<text x="928.75" y="163" font-size="15" fill="#8c3c16" font-weight="bold" text-anchor="middle">QA reviewer</text>
+<line x1="928.75" y1="177" x2="928.75" y2="736" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="1020.50" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="1104.25" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="1104.25" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Workbench</text>
+<line x1="1104.25" y1="177" x2="1104.25" y2="736" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<line x1="24" y1="249" x2="1196" y2="249" stroke="#e5e9e9"/>
+<text x="32" y="226" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="216" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Inspect the exact host, runtime, build, UI and</text>
+<text x="63" y="236" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">storage components</text>
+<circle cx="577.75" cy="221.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 221.00 H 753.25" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 745.25 216.60 L 753.25 221.00 L 745.25 225.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="305" x2="1196" y2="305" stroke="#e5e9e9"/>
+<text x="32" y="282" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="272" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Record the permitted boundary and component</text>
+<text x="63" y="292" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">origins</text>
+<circle cx="577.75" cy="270.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 270.00 h 27 v 14 h -27" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 585.75 279.60 L 577.75 284.00 L 585.75 288.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<rect x="22" y="307" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="328" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">If a compatible host is established</text>
+<line x1="24" y1="397" x2="1196" y2="397" stroke="#e5e9e9"/>
+<text x="32" y="374" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="364" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Select one eligible store and install first-</text>
+<text x="63" y="384" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">party assets</text>
+<circle cx="577.75" cy="369.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 369.00 H 753.25" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 745.25 364.60 L 753.25 369.00 L 745.25 373.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="453" x2="1196" y2="453" stroke="#e5e9e9"/>
+<text x="32" y="430" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="420" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Exercise picker, CLI and reports with network</text>
+<text x="63" y="440" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">access denied</text>
+<circle cx="928.75" cy="425.00" r="3.3" fill="#8c3c16"/><path d="M 928.75 425.00 H 1104.25" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 1096.25 420.60 L 1104.25 425.00 L 1096.25 429.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="509" x2="1196" y2="509" stroke="#e5e9e9"/>
+<text x="32" y="486" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="476" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return local results and recorded attempts for</text>
+<text x="63" y="496" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">inspection</text>
+<circle cx="1104.25" cy="481.00" r="3.3" fill="#144e65"/><path d="M 1104.25 481.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 936.75 476.60 L 928.75 481.00 L 936.75 485.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="545" x2="1196" y2="545" stroke="#e5e9e9"/>
+<text x="32" y="532" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="532" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Record setup and offline evidence for the demo</text>
+<circle cx="928.75" cy="527.00" r="3.3" fill="#8c3c16"/><path d="M 928.75 527.00 H 577.75" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 585.75 522.60 L 577.75 527.00 L 585.75 531.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<rect x="22" y="547" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="568" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">If the boundary is unresolved</text>
+<line x1="24" y1="637" x2="1196" y2="637" stroke="#e5e9e9"/>
+<text x="32" y="614" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="604" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Keep executable delivery open and continue</text>
+<text x="63" y="624" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">original fixture and contract work</text>
+<circle cx="577.75" cy="602.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 602.00 h 27 v 14 h -27" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 585.75 611.60 L 577.75 616.00 L 585.75 620.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<rect x="22" y="639" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="660" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Independent model eligibility decision</text>
+<line x1="24" y1="729" x2="1196" y2="729" stroke="#e5e9e9"/>
+<text x="32" y="706" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="696" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Leave the brief disabled unless client, model</text>
+<text x="63" y="716" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">and transport meet all restrictions</text>
+<circle cx="577.75" cy="701.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 701.00 H 1104.25" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 1096.25 696.60 L 1104.25 701.00 L 1096.25 705.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+</svg>

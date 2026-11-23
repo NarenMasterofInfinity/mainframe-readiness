@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="849" viewBox="0 0 1220 849" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">From a blocker to its source</title>
+<desc id="description">A planning lead can start from a gate. An analyst or architect can use the keyboard-accessible table to reach the same graph edges and source evidence. Participants: Reviewer (Human), Workbench (Machine), Graph (Machine), Evidence store (Machine). 1. Reviewer to Workbench: Open a gate, hotspot, component or entry point on a selected revision. 2. Workbench to Graph: Request dependencies, dependents or data handoff with direction and depth. 3. Graph to Graph: Visit each node once, exclude the root from counts and retain parallel edge evidence. 4. Graph to Graph: Bound depth and visits separately from the screen display limit. 5. Graph to Workbench: Return direct and indirect impact, example paths, affected entries and cap flags. If the result is large, disconnected or empty. 6. Workbench to Reviewer: Offer paging for visited rows, label lower bounds or explain the empty result. To check a displayed claim. 7. Reviewer to Workbench: Open the edge or select a behavior candidate or dictionary field. 8. Workbench to Evidence store: Look up the cited artifact digest, original spans and source version. 9. Evidence store to Workbench: Return verified physical lines, or a stale or unavailable locator. 10. Workbench to Reviewer: Show the stated fact, derivation, unknowns and a way back to the blocker.</desc>
+<rect width="1220" height="849" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">From a blocker to its source</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">A planning lead can start from a gate. An analyst or architect can use the keyboard-accessible table to reach the same graph</text>
+<text x="29" y="91" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">edges and source evidence.</text>
+<text x="31" y="162" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="121" width="167.50" height="56" rx="6" fill="#fff0e6"/>
+<text x="577.75" y="142" font-size="12" fill="#8c3c16" font-weight="normal" text-anchor="middle">Human</text>
+<text x="577.75" y="163" font-size="15" fill="#8c3c16" font-weight="bold" text-anchor="middle">Reviewer</text>
+<line x1="577.75" y1="177" x2="577.75" y2="832" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="669.50" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="753.25" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="753.25" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Workbench</text>
+<line x1="753.25" y1="177" x2="753.25" y2="832" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="845.00" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="928.75" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="928.75" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Graph</text>
+<line x1="928.75" y1="177" x2="928.75" y2="832" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="1020.50" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="1104.25" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="1104.25" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Evidence store</text>
+<line x1="1104.25" y1="177" x2="1104.25" y2="832" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<line x1="24" y1="249" x2="1196" y2="249" stroke="#e5e9e9"/>
+<text x="32" y="226" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="216" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Open a gate, hotspot, component or entry point</text>
+<text x="63" y="236" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">on a selected revision</text>
+<circle cx="577.75" cy="221.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 221.00 H 753.25" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 745.25 216.60 L 753.25 221.00 L 745.25 225.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="305" x2="1196" y2="305" stroke="#e5e9e9"/>
+<text x="32" y="282" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="272" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Request dependencies, dependents or data</text>
+<text x="63" y="292" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">handoff with direction and depth</text>
+<circle cx="753.25" cy="277.00" r="3.3" fill="#144e65"/><path d="M 753.25 277.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 920.75 272.60 L 928.75 277.00 L 920.75 281.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="361" x2="1196" y2="361" stroke="#e5e9e9"/>
+<text x="32" y="338" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="328" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Visit each node once, exclude the root from</text>
+<text x="63" y="348" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">counts and retain parallel edge evidence</text>
+<circle cx="928.75" cy="326.00" r="3.3" fill="#144e65"/><path d="M 928.75 326.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 936.75 335.60 L 928.75 340.00 L 936.75 344.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="417" x2="1196" y2="417" stroke="#e5e9e9"/>
+<text x="32" y="394" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="384" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Bound depth and visits separately from the</text>
+<text x="63" y="404" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">screen display limit</text>
+<circle cx="928.75" cy="382.00" r="3.3" fill="#144e65"/><path d="M 928.75 382.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 936.75 391.60 L 928.75 396.00 L 936.75 400.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="473" x2="1196" y2="473" stroke="#e5e9e9"/>
+<text x="32" y="450" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="440" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return direct and indirect impact, example</text>
+<text x="63" y="460" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">paths, affected entries and cap flags</text>
+<circle cx="928.75" cy="445.00" r="3.3" fill="#144e65"/><path d="M 928.75 445.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 761.25 440.60 L 753.25 445.00 L 761.25 449.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="475" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="496" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">If the result is large, disconnected or empty</text>
+<line x1="24" y1="565" x2="1196" y2="565" stroke="#e5e9e9"/>
+<text x="32" y="542" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="532" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Offer paging for visited rows, label lower</text>
+<text x="63" y="552" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">bounds or explain the empty result</text>
+<circle cx="753.25" cy="537.00" r="3.3" fill="#144e65"/><path d="M 753.25 537.00 H 577.75" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 585.75 532.60 L 577.75 537.00 L 585.75 541.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="567" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="588" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">To check a displayed claim</text>
+<line x1="24" y1="657" x2="1196" y2="657" stroke="#e5e9e9"/>
+<text x="32" y="634" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="624" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Open the edge or select a behavior candidate or</text>
+<text x="63" y="644" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">dictionary field</text>
+<circle cx="577.75" cy="629.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 629.00 H 753.25" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 745.25 624.60 L 753.25 629.00 L 745.25 633.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="713" x2="1196" y2="713" stroke="#e5e9e9"/>
+<text x="32" y="690" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="680" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Look up the cited artifact digest, original</text>
+<text x="63" y="700" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">spans and source version</text>
+<circle cx="753.25" cy="685.00" r="3.3" fill="#144e65"/><path d="M 753.25 685.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 680.60 L 1104.25 685.00 L 1096.25 689.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="769" x2="1196" y2="769" stroke="#e5e9e9"/>
+<text x="32" y="746" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">09</text>
+<text x="63" y="736" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return verified physical lines, or a stale or</text>
+<text x="63" y="756" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">unavailable locator</text>
+<circle cx="1104.25" cy="741.00" r="3.3" fill="#144e65"/><path d="M 1104.25 741.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 761.25 736.60 L 753.25 741.00 L 761.25 745.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="825" x2="1196" y2="825" stroke="#e5e9e9"/>
+<text x="32" y="802" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">10</text>
+<text x="63" y="792" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Show the stated fact, derivation, unknowns and</text>
+<text x="63" y="812" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">a way back to the blocker</text>
+<circle cx="753.25" cy="797.00" r="3.3" fill="#144e65"/><path d="M 753.25 797.00 H 577.75" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 585.75 792.60 L 577.75 797.00 L 585.75 801.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+</svg>

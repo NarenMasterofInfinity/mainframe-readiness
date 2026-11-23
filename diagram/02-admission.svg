@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="1065" viewBox="0 0 1220 1065" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">Select and admit the resources</title>
+<desc id="description">The receipt explains a structural rejection. A regular file that cannot be interpreted is handled during discovery, so other usable files can still contribute. Participants: Analyst (Human), Picker or CLI (Machine), Runner (Machine), Local store (Machine). 1. Analyst to Picker or CLI: Commit one selection, with zero metadata fields. 2. Picker or CLI to Runner: Submit local handles and a submission token. If the same submission event arrives twice. 3. Runner to Local store: Look up the original token and run. 4. Runner to Picker or CLI: Return that run and its progress, then stop this duplicate request. If a different run already owns the workspace writer. 5. Runner to Picker or CLI: Surface the active run and allow a new submission after it finishes. For a new assessment when the writer is available. 6. Runner to Local store: Reserve run identity and the sole workspace writer. 7. Runner to Runner: Enumerate selected paths and normalize one enclosing archive wrapper. 8. Runner to Runner: Check path containment, collisions, member types and declared sizes. 9. Runner to Runner: Stream bytes into staging, enforce actual limits and hash readable members. If empty, unsafe, encrypted, malformed, colliding or over the limit. 10. Runner to Local store: Retain a failure receipt and discard incomplete staging. 11. Runner to Analyst: Show the reason and a remedy, such as selecting the containing folder. If admitted. 12. Runner to Local store: Freeze paths, bytes, limits and the supplied-file perimeter. 13. Runner to Picker or CLI: Expose inventory progress and continue automatically.</desc>
+<rect width="1220" height="1065" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">Select and admit the resources</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">The receipt explains a structural rejection. A regular file that cannot be interpreted is handled during discovery, so other</text>
+<text x="29" y="91" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">usable files can still contribute.</text>
+<text x="31" y="162" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="121" width="167.50" height="56" rx="6" fill="#fff0e6"/>
+<text x="577.75" y="142" font-size="12" fill="#8c3c16" font-weight="normal" text-anchor="middle">Human</text>
+<text x="577.75" y="163" font-size="15" fill="#8c3c16" font-weight="bold" text-anchor="middle">Analyst</text>
+<line x1="577.75" y1="177" x2="577.75" y2="1048" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="669.50" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="753.25" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="753.25" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Picker or CLI</text>
+<line x1="753.25" y1="177" x2="753.25" y2="1048" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="845.00" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="928.75" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="928.75" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Runner</text>
+<line x1="928.75" y1="177" x2="928.75" y2="1048" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="1020.50" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="1104.25" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="1104.25" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Local store</text>
+<line x1="1104.25" y1="177" x2="1104.25" y2="1048" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<line x1="24" y1="229" x2="1196" y2="229" stroke="#e5e9e9"/>
+<text x="32" y="216" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="216" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Commit one selection, with zero metadata fields</text>
+<circle cx="577.75" cy="211.00" r="3.3" fill="#8c3c16"/><path d="M 577.75 211.00 H 753.25" fill="none" stroke="#8c3c16" stroke-width="2.2"/><path d="M 745.25 206.60 L 753.25 211.00 L 745.25 215.40" fill="none" stroke="#8c3c16" stroke-width="2.2"/>
+<line x1="24" y1="265" x2="1196" y2="265" stroke="#e5e9e9"/>
+<text x="32" y="252" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="252" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Submit local handles and a submission token</text>
+<circle cx="753.25" cy="247.00" r="3.3" fill="#144e65"/><path d="M 753.25 247.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 920.75 242.60 L 928.75 247.00 L 920.75 251.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="267" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="288" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">If the same submission event arrives twice</text>
+<line x1="24" y1="337" x2="1196" y2="337" stroke="#e5e9e9"/>
+<text x="32" y="324" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="324" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Look up the original token and run</text>
+<circle cx="928.75" cy="319.00" r="3.3" fill="#144e65"/><path d="M 928.75 319.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 314.60 L 1104.25 319.00 L 1096.25 323.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="393" x2="1196" y2="393" stroke="#e5e9e9"/>
+<text x="32" y="370" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="360" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return that run and its progress, then stop</text>
+<text x="63" y="380" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">this duplicate request</text>
+<circle cx="928.75" cy="365.00" r="3.3" fill="#144e65"/><path d="M 928.75 365.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 761.25 360.60 L 753.25 365.00 L 761.25 369.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="395" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="416" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">If a different run already owns the workspace writer</text>
+<line x1="24" y1="485" x2="1196" y2="485" stroke="#e5e9e9"/>
+<text x="32" y="462" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="452" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Surface the active run and allow a new</text>
+<text x="63" y="472" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">submission after it finishes</text>
+<circle cx="928.75" cy="457.00" r="3.3" fill="#144e65"/><path d="M 928.75 457.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 761.25 452.60 L 753.25 457.00 L 761.25 461.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="487" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="508" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">For a new assessment when the writer is available</text>
+<line x1="24" y1="577" x2="1196" y2="577" stroke="#e5e9e9"/>
+<text x="32" y="554" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="544" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Reserve run identity and the sole workspace</text>
+<text x="63" y="564" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">writer</text>
+<circle cx="928.75" cy="549.00" r="3.3" fill="#144e65"/><path d="M 928.75 549.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 544.60 L 1104.25 549.00 L 1096.25 553.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="633" x2="1196" y2="633" stroke="#e5e9e9"/>
+<text x="32" y="610" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="600" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Enumerate selected paths and normalize one</text>
+<text x="63" y="620" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">enclosing archive wrapper</text>
+<circle cx="928.75" cy="598.00" r="3.3" fill="#144e65"/><path d="M 928.75 598.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 936.75 607.60 L 928.75 612.00 L 936.75 616.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="689" x2="1196" y2="689" stroke="#e5e9e9"/>
+<text x="32" y="666" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="656" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Check path containment, collisions, member</text>
+<text x="63" y="676" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">types and declared sizes</text>
+<circle cx="928.75" cy="654.00" r="3.3" fill="#144e65"/><path d="M 928.75 654.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 936.75 663.60 L 928.75 668.00 L 936.75 672.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="745" x2="1196" y2="745" stroke="#e5e9e9"/>
+<text x="32" y="722" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">09</text>
+<text x="63" y="712" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Stream bytes into staging, enforce actual</text>
+<text x="63" y="732" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">limits and hash readable members</text>
+<circle cx="928.75" cy="710.00" r="3.3" fill="#144e65"/><path d="M 928.75 710.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 936.75 719.60 L 928.75 724.00 L 936.75 728.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="747" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="768" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">If empty, unsafe, encrypted, malformed, colliding or over the limit</text>
+<line x1="24" y1="837" x2="1196" y2="837" stroke="#e5e9e9"/>
+<text x="32" y="814" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">10</text>
+<text x="63" y="804" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Retain a failure receipt and discard incomplete</text>
+<text x="63" y="824" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">staging</text>
+<circle cx="928.75" cy="809.00" r="3.3" fill="#144e65"/><path d="M 928.75 809.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 804.60 L 1104.25 809.00 L 1096.25 813.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="893" x2="1196" y2="893" stroke="#e5e9e9"/>
+<text x="32" y="870" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">11</text>
+<text x="63" y="860" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Show the reason and a remedy, such as selecting</text>
+<text x="63" y="880" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">the containing folder</text>
+<circle cx="928.75" cy="865.00" r="3.3" fill="#144e65"/><path d="M 928.75 865.00 H 577.75" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 585.75 860.60 L 577.75 865.00 L 585.75 869.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="895" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="916" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">If admitted</text>
+<line x1="24" y1="985" x2="1196" y2="985" stroke="#e5e9e9"/>
+<text x="32" y="962" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">12</text>
+<text x="63" y="952" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Freeze paths, bytes, limits and the supplied-</text>
+<text x="63" y="972" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">file perimeter</text>
+<circle cx="928.75" cy="957.00" r="3.3" fill="#144e65"/><path d="M 928.75 957.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 952.60 L 1104.25 957.00 L 1096.25 961.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="1041" x2="1196" y2="1041" stroke="#e5e9e9"/>
+<text x="32" y="1018" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">13</text>
+<text x="63" y="1008" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Expose inventory progress and continue</text>
+<text x="63" y="1028" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">automatically</text>
+<circle cx="928.75" cy="1013.00" r="3.3" fill="#144e65"/><path d="M 928.75 1013.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 761.25 1008.60 L 753.25 1013.00 L 761.25 1017.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+</svg>

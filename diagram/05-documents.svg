@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="991" viewBox="0 0 1220 991" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">Read schedules, access, interfaces and operational notes</title>
+<desc id="description">The first report uses the original files. A later reviewer can add an attributed interpretation of an unfamiliar source. Participants: Runner (Machine), Resource reader (Machine), Resolver (Machine), Evidence store (Machine). 1. Runner to Resource reader: Inspect the existing export with its physical row or line map. Scheduler CSV with recognized headings. 2. Resource reader to Resolver: Submit predecessor, successor and condition with the actual row. 3. Resolver to Evidence store: Record documented order for unique scoped jobs, or a validation gap. CICS resource definition or access command. 4. Resource reader to Resolver: Submit literal group, transaction and program, or profile, identity and access. 5. Resolver to Evidence store: Store definition or declared access with its scope and locator. Interface register. 6. Resource reader to Resolver: Submit named component, external party, direction and contract. 7. Resolver to Evidence store: Preserve supported declaration and flag incomplete or ambiguous contracts. Runbook, ownership note, audit note or test description. 8. Runner to Resource reader: Supply the indexed subject names after code discovery. 9. Resource reader to Evidence store: Attach a relevant paragraph as a review lead, or retain inventory alone. Malformed, unrelated or contradictory evidence. 10. Resource reader to Evidence store: Keep duplicate-header or malformed-row diagnostics and original locations. 11. Resolver to Evidence store: Preserve both comparable conflicting claims, or leave the requested evidence missing.</desc>
+<rect width="1220" height="991" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">Read schedules, access, interfaces and operational notes</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">The first report uses the original files. A later reviewer can add an attributed interpretation of an unfamiliar source.</text>
+<text x="31" y="140" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="99" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="577.75" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="577.75" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Runner</text>
+<line x1="577.75" y1="155" x2="577.75" y2="974" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="669.50" y="99" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="753.25" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="753.25" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Resource reader</text>
+<line x1="753.25" y1="155" x2="753.25" y2="974" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="845.00" y="99" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="928.75" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="928.75" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Resolver</text>
+<line x1="928.75" y1="155" x2="928.75" y2="974" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="1020.50" y="99" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="1104.25" y="120" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="1104.25" y="141" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Evidence store</text>
+<line x1="1104.25" y1="155" x2="1104.25" y2="974" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<line x1="24" y1="227" x2="1196" y2="227" stroke="#e5e9e9"/>
+<text x="32" y="204" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="194" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Inspect the existing export with its physical</text>
+<text x="63" y="214" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">row or line map</text>
+<circle cx="577.75" cy="199.00" r="3.3" fill="#144e65"/><path d="M 577.75 199.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 745.25 194.60 L 753.25 199.00 L 745.25 203.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="229" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="250" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Scheduler CSV with recognized headings</text>
+<line x1="24" y1="319" x2="1196" y2="319" stroke="#e5e9e9"/>
+<text x="32" y="296" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="286" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Submit predecessor, successor and condition</text>
+<text x="63" y="306" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">with the actual row</text>
+<circle cx="753.25" cy="291.00" r="3.3" fill="#144e65"/><path d="M 753.25 291.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 920.75 286.60 L 928.75 291.00 L 920.75 295.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="375" x2="1196" y2="375" stroke="#e5e9e9"/>
+<text x="32" y="352" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="342" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Record documented order for unique scoped jobs,</text>
+<text x="63" y="362" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">or a validation gap</text>
+<circle cx="928.75" cy="347.00" r="3.3" fill="#144e65"/><path d="M 928.75 347.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 342.60 L 1104.25 347.00 L 1096.25 351.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="377" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="398" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">CICS resource definition or access command</text>
+<line x1="24" y1="467" x2="1196" y2="467" stroke="#e5e9e9"/>
+<text x="32" y="444" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="434" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Submit literal group, transaction and program,</text>
+<text x="63" y="454" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">or profile, identity and access</text>
+<circle cx="753.25" cy="439.00" r="3.3" fill="#144e65"/><path d="M 753.25 439.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 920.75 434.60 L 928.75 439.00 L 920.75 443.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="523" x2="1196" y2="523" stroke="#e5e9e9"/>
+<text x="32" y="500" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="490" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Store definition or declared access with its</text>
+<text x="63" y="510" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">scope and locator</text>
+<circle cx="928.75" cy="495.00" r="3.3" fill="#144e65"/><path d="M 928.75 495.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 490.60 L 1104.25 495.00 L 1096.25 499.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="525" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="546" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Interface register</text>
+<line x1="24" y1="615" x2="1196" y2="615" stroke="#e5e9e9"/>
+<text x="32" y="592" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="582" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Submit named component, external party,</text>
+<text x="63" y="602" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">direction and contract</text>
+<circle cx="753.25" cy="587.00" r="3.3" fill="#144e65"/><path d="M 753.25 587.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 920.75 582.60 L 928.75 587.00 L 920.75 591.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="671" x2="1196" y2="671" stroke="#e5e9e9"/>
+<text x="32" y="648" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="638" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Preserve supported declaration and flag</text>
+<text x="63" y="658" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">incomplete or ambiguous contracts</text>
+<circle cx="928.75" cy="643.00" r="3.3" fill="#144e65"/><path d="M 928.75 643.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 638.60 L 1104.25 643.00 L 1096.25 647.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="673" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="694" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Runbook, ownership note, audit note or test description</text>
+<line x1="24" y1="763" x2="1196" y2="763" stroke="#e5e9e9"/>
+<text x="32" y="740" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="730" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Supply the indexed subject names after code</text>
+<text x="63" y="750" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">discovery</text>
+<circle cx="577.75" cy="735.00" r="3.3" fill="#144e65"/><path d="M 577.75 735.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 745.25 730.60 L 753.25 735.00 L 745.25 739.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="819" x2="1196" y2="819" stroke="#e5e9e9"/>
+<text x="32" y="796" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">09</text>
+<text x="63" y="786" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Attach a relevant paragraph as a review lead,</text>
+<text x="63" y="806" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">or retain inventory alone</text>
+<circle cx="753.25" cy="791.00" r="3.3" fill="#144e65"/><path d="M 753.25 791.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 786.60 L 1104.25 791.00 L 1096.25 795.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="821" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="842" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Malformed, unrelated or contradictory evidence</text>
+<line x1="24" y1="911" x2="1196" y2="911" stroke="#e5e9e9"/>
+<text x="32" y="888" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">10</text>
+<text x="63" y="878" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Keep duplicate-header or malformed-row</text>
+<text x="63" y="898" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">diagnostics and original locations</text>
+<circle cx="753.25" cy="883.00" r="3.3" fill="#144e65"/><path d="M 753.25 883.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 878.60 L 1104.25 883.00 L 1096.25 887.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="967" x2="1196" y2="967" stroke="#e5e9e9"/>
+<text x="32" y="944" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">11</text>
+<text x="63" y="934" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Preserve both comparable conflicting claims, or</text>
+<text x="63" y="954" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">leave the requested evidence missing</text>
+<circle cx="928.75" cy="939.00" r="3.3" fill="#144e65"/><path d="M 928.75 939.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 934.60 L 1104.25 939.00 L 1096.25 943.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="825" viewBox="0 0 1220 825" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">Publish the automatic report pair</title>
+<desc id="description">Revision zero is the original machine assessment. A completed result becomes visible only when its snapshot and both default reports are available together. Participants: Runner (Machine), Exporter (Machine), Local store (Machine), Analyst (Human). 1. Runner to Exporter: Supply one run, one revision and all source-linked results. 2. Exporter to Exporter: Validate IDs and scope, escape supplied text and omit excerpts by default. 3. Exporter to Local store: Stage snapshot, report.html and report.json outside the input tree. Validation and writes succeed. 4. Local store to Local store: Atomically expose the complete set and mark the run completed. 5. Local store to Runner: Return run ID, revision and local paths. 6. Runner to Analyst: Open three answers, strongest drivers, first open question and next action. Admitted files yielded no usable observations. 7. Runner to Analyst: Show the same saved pair with inventory, unknowns and a replacement request. Validation or storage fails before commit. 8. Exporter to Runner: Return a publication diagnostic. 9. Runner to Local store: Keep the last valid publication and record a failed attempt. 10. Runner to Analyst: Show the failure stage and linked retry option.</desc>
+<rect width="1220" height="825" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">Publish the automatic report pair</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">Revision zero is the original machine assessment. A completed result becomes visible only when its snapshot and both default</text>
+<text x="29" y="91" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">reports are available together.</text>
+<text x="31" y="162" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="577.75" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="577.75" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Runner</text>
+<line x1="577.75" y1="177" x2="577.75" y2="808" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="669.50" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="753.25" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="753.25" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Exporter</text>
+<line x1="753.25" y1="177" x2="753.25" y2="808" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="845.00" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="928.75" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="928.75" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Local store</text>
+<line x1="928.75" y1="177" x2="928.75" y2="808" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="1020.50" y="121" width="167.50" height="56" rx="6" fill="#fff0e6"/>
+<text x="1104.25" y="142" font-size="12" fill="#8c3c16" font-weight="normal" text-anchor="middle">Human</text>
+<text x="1104.25" y="163" font-size="15" fill="#8c3c16" font-weight="bold" text-anchor="middle">Analyst</text>
+<line x1="1104.25" y1="177" x2="1104.25" y2="808" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<line x1="24" y1="249" x2="1196" y2="249" stroke="#e5e9e9"/>
+<text x="32" y="226" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="216" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Supply one run, one revision and all source-</text>
+<text x="63" y="236" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">linked results</text>
+<circle cx="577.75" cy="221.00" r="3.3" fill="#144e65"/><path d="M 577.75 221.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 745.25 216.60 L 753.25 221.00 L 745.25 225.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="305" x2="1196" y2="305" stroke="#e5e9e9"/>
+<text x="32" y="282" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="272" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Validate IDs and scope, escape supplied text</text>
+<text x="63" y="292" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">and omit excerpts by default</text>
+<circle cx="753.25" cy="270.00" r="3.3" fill="#144e65"/><path d="M 753.25 270.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 761.25 279.60 L 753.25 284.00 L 761.25 288.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="361" x2="1196" y2="361" stroke="#e5e9e9"/>
+<text x="32" y="338" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="328" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Stage snapshot, report.html and report.json</text>
+<text x="63" y="348" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">outside the input tree</text>
+<circle cx="753.25" cy="333.00" r="3.3" fill="#144e65"/><path d="M 753.25 333.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 920.75 328.60 L 928.75 333.00 L 920.75 337.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="363" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="384" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Validation and writes succeed</text>
+<line x1="24" y1="453" x2="1196" y2="453" stroke="#e5e9e9"/>
+<text x="32" y="430" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="420" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Atomically expose the complete set and mark the</text>
+<text x="63" y="440" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">run completed</text>
+<circle cx="928.75" cy="418.00" r="3.3" fill="#144e65"/><path d="M 928.75 418.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 936.75 427.60 L 928.75 432.00 L 936.75 436.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="489" x2="1196" y2="489" stroke="#e5e9e9"/>
+<text x="32" y="476" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="476" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return run ID, revision and local paths</text>
+<circle cx="928.75" cy="471.00" r="3.3" fill="#144e65"/><path d="M 928.75 471.00 H 577.75" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 585.75 466.60 L 577.75 471.00 L 585.75 475.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="545" x2="1196" y2="545" stroke="#e5e9e9"/>
+<text x="32" y="522" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="512" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Open three answers, strongest drivers, first</text>
+<text x="63" y="532" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">open question and next action</text>
+<circle cx="577.75" cy="517.00" r="3.3" fill="#144e65"/><path d="M 577.75 517.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 1096.25 512.60 L 1104.25 517.00 L 1096.25 521.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="547" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="568" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Admitted files yielded no usable observations</text>
+<line x1="24" y1="637" x2="1196" y2="637" stroke="#e5e9e9"/>
+<text x="32" y="614" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="604" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Show the same saved pair with inventory,</text>
+<text x="63" y="624" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">unknowns and a replacement request</text>
+<circle cx="577.75" cy="609.00" r="3.3" fill="#144e65"/><path d="M 577.75 609.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 1096.25 604.60 L 1104.25 609.00 L 1096.25 613.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="639" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="660" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Validation or storage fails before commit</text>
+<line x1="24" y1="709" x2="1196" y2="709" stroke="#e5e9e9"/>
+<text x="32" y="696" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="696" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return a publication diagnostic</text>
+<circle cx="753.25" cy="691.00" r="3.3" fill="#144e65"/><path d="M 753.25 691.00 H 577.75" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 585.75 686.60 L 577.75 691.00 L 585.75 695.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="765" x2="1196" y2="765" stroke="#e5e9e9"/>
+<text x="32" y="742" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">09</text>
+<text x="63" y="732" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Keep the last valid publication and record a</text>
+<text x="63" y="752" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">failed attempt</text>
+<circle cx="577.75" cy="737.00" r="3.3" fill="#144e65"/><path d="M 577.75 737.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 920.75 732.60 L 928.75 737.00 L 920.75 741.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="801" x2="1196" y2="801" stroke="#e5e9e9"/>
+<text x="32" y="788" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">10</text>
+<text x="63" y="788" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Show the failure stage and linked retry option</text>
+<circle cx="577.75" cy="783.00" r="3.3" fill="#144e65"/><path d="M 577.75 783.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2" stroke-dasharray="6 4"/><path d="M 1096.25 778.60 L 1104.25 783.00 L 1096.25 787.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+</svg>

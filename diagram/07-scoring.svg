@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="1109" viewBox="0 0 1220 1109" role="img" aria-labelledby="title description" font-family="sans-serif">
+<title id="title">Calculate three separate answers</title>
+<desc id="description">The rubric covers code and business logic, data, batch, transactions and UI, integrations, security, and operations. A complete report can legitimately say More evidence required. Participants: Rubric (Machine), Evidence store (Machine), Gap planner (Machine), Report model (Machine). 1. Rubric to Evidence store: Read scoped signals, coverage, unresolved items and active reviews. Complexity for each applicable dimension. 2. Rubric to Report model: Record the strongest supported band and the rule or missing prerequisite. 3. Rubric to Report model: Qualify partial coverage and distinguish Unknown, reviewed Low and reviewed exclusions. 4. Rubric to Report model: Return the highest demonstrated overall signal and carry forward uncertainty. Confidence for each applicable dimension. 5. Rubric to Rubric: Check availability, extraction, resolution and independent review. 6. Rubric to Report model: Report passed and applicable counts, band, unknowns and limits. 7. Rubric to Report model: Use the lowest known applicable band and flag unresolved dimensions. Readiness for critical subjects. 8. Rubric to Rubric: Evaluate scope, dependencies, business and data, operations, security and interfaces, and review. 9. Rubric to Report model: Any failed gate gives Not ready, else an unknown gives More evidence required. 10. Rubric to Report model: All applicable gates pass gives Ready for detailed planning. Recommendations for the resulting evidence state. 11. Rubric to Gap planner: Supply supported risks, gaps, contradictions and affected entries. 12. Gap planner to Report model: Rank blockers, then material investigations, with reason, owner role and closure evidence. 13. Gap planner to Report model: Attach conditional planning considerations and the assumptions to check.</desc>
+<rect width="1220" height="1109" fill="#fff"/>
+<text x="28" y="41" font-size="29" fill="#123744" font-weight="bold" text-anchor="start">Calculate three separate answers</text>
+<text x="29" y="70" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">The rubric covers code and business logic, data, batch, transactions and UI, integrations, security, and operations. A</text>
+<text x="29" y="91" font-size="16" fill="#425963" font-weight="normal" text-anchor="start">complete report can legitimately say More evidence required.</text>
+<text x="31" y="162" font-size="17" fill="#173b49" font-weight="bold" text-anchor="start">Action</text>
+<rect x="494.00" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="577.75" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="577.75" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Rubric</text>
+<line x1="577.75" y1="177" x2="577.75" y2="1092" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="669.50" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="753.25" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="753.25" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Evidence store</text>
+<line x1="753.25" y1="177" x2="753.25" y2="1092" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="845.00" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="928.75" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="928.75" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Gap planner</text>
+<line x1="928.75" y1="177" x2="928.75" y2="1092" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<rect x="1020.50" y="121" width="167.50" height="56" rx="6" fill="#e4f2f5"/>
+<text x="1104.25" y="142" font-size="12" fill="#144e65" font-weight="normal" text-anchor="middle">Machine</text>
+<text x="1104.25" y="163" font-size="15" fill="#144e65" font-weight="bold" text-anchor="middle">Report model</text>
+<line x1="1104.25" y1="177" x2="1104.25" y2="1092" stroke="#9cabb1" stroke-width="1.2" stroke-dasharray="3 5"/>
+<line x1="24" y1="249" x2="1196" y2="249" stroke="#e5e9e9"/>
+<text x="32" y="226" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">01</text>
+<text x="63" y="216" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Read scoped signals, coverage, unresolved items</text>
+<text x="63" y="236" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">and active reviews</text>
+<circle cx="577.75" cy="221.00" r="3.3" fill="#144e65"/><path d="M 577.75 221.00 H 753.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 745.25 216.60 L 753.25 221.00 L 745.25 225.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="251" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="272" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Complexity for each applicable dimension</text>
+<line x1="24" y1="341" x2="1196" y2="341" stroke="#e5e9e9"/>
+<text x="32" y="318" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">02</text>
+<text x="63" y="308" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Record the strongest supported band and the</text>
+<text x="63" y="328" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">rule or missing prerequisite</text>
+<circle cx="577.75" cy="313.00" r="3.3" fill="#144e65"/><path d="M 577.75 313.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 308.60 L 1104.25 313.00 L 1096.25 317.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="397" x2="1196" y2="397" stroke="#e5e9e9"/>
+<text x="32" y="374" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">03</text>
+<text x="63" y="364" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Qualify partial coverage and distinguish</text>
+<text x="63" y="384" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Unknown, reviewed Low and reviewed exclusions</text>
+<circle cx="577.75" cy="369.00" r="3.3" fill="#144e65"/><path d="M 577.75 369.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 364.60 L 1104.25 369.00 L 1096.25 373.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="453" x2="1196" y2="453" stroke="#e5e9e9"/>
+<text x="32" y="430" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">04</text>
+<text x="63" y="420" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Return the highest demonstrated overall signal</text>
+<text x="63" y="440" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">and carry forward uncertainty</text>
+<circle cx="577.75" cy="425.00" r="3.3" fill="#144e65"/><path d="M 577.75 425.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 420.60 L 1104.25 425.00 L 1096.25 429.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="455" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="476" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Confidence for each applicable dimension</text>
+<line x1="24" y1="545" x2="1196" y2="545" stroke="#e5e9e9"/>
+<text x="32" y="522" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">05</text>
+<text x="63" y="512" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Check availability, extraction, resolution and</text>
+<text x="63" y="532" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">independent review</text>
+<circle cx="577.75" cy="510.00" r="3.3" fill="#144e65"/><path d="M 577.75 510.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 585.75 519.60 L 577.75 524.00 L 585.75 528.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="601" x2="1196" y2="601" stroke="#e5e9e9"/>
+<text x="32" y="578" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">06</text>
+<text x="63" y="568" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Report passed and applicable counts, band,</text>
+<text x="63" y="588" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">unknowns and limits</text>
+<circle cx="577.75" cy="573.00" r="3.3" fill="#144e65"/><path d="M 577.75 573.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 568.60 L 1104.25 573.00 L 1096.25 577.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="657" x2="1196" y2="657" stroke="#e5e9e9"/>
+<text x="32" y="634" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">07</text>
+<text x="63" y="624" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Use the lowest known applicable band and flag</text>
+<text x="63" y="644" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">unresolved dimensions</text>
+<circle cx="577.75" cy="629.00" r="3.3" fill="#144e65"/><path d="M 577.75 629.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 624.60 L 1104.25 629.00 L 1096.25 633.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="659" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="680" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Readiness for critical subjects</text>
+<line x1="24" y1="769" x2="1196" y2="769" stroke="#e5e9e9"/>
+<text x="32" y="736" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">08</text>
+<text x="63" y="716" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Evaluate scope, dependencies, business and</text>
+<text x="63" y="736" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">data, operations, security and interfaces, and</text>
+<text x="63" y="756" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">review</text>
+<circle cx="577.75" cy="724.00" r="3.3" fill="#144e65"/><path d="M 577.75 724.00 h 27 v 14 h -27" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 585.75 733.60 L 577.75 738.00 L 585.75 742.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="825" x2="1196" y2="825" stroke="#e5e9e9"/>
+<text x="32" y="802" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">09</text>
+<text x="63" y="792" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Any failed gate gives Not ready, else an</text>
+<text x="63" y="812" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">unknown gives More evidence required</text>
+<circle cx="577.75" cy="797.00" r="3.3" fill="#144e65"/><path d="M 577.75 797.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 792.60 L 1104.25 797.00 L 1096.25 801.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="881" x2="1196" y2="881" stroke="#e5e9e9"/>
+<text x="32" y="858" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">10</text>
+<text x="63" y="848" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">All applicable gates pass gives Ready for</text>
+<text x="63" y="868" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">detailed planning</text>
+<circle cx="577.75" cy="853.00" r="3.3" fill="#144e65"/><path d="M 577.75 853.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 848.60 L 1104.25 853.00 L 1096.25 857.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<rect x="22" y="883" width="1176" height="31" rx="4" fill="#e8edef"/>
+<text x="35" y="904" font-size="14" fill="#334d59" font-weight="bold" text-anchor="start">Recommendations for the resulting evidence state</text>
+<line x1="24" y1="973" x2="1196" y2="973" stroke="#e5e9e9"/>
+<text x="32" y="950" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">11</text>
+<text x="63" y="940" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Supply supported risks, gaps, contradictions</text>
+<text x="63" y="960" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">and affected entries</text>
+<circle cx="577.75" cy="945.00" r="3.3" fill="#144e65"/><path d="M 577.75 945.00 H 928.75" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 920.75 940.60 L 928.75 945.00 L 920.75 949.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="1029" x2="1196" y2="1029" stroke="#e5e9e9"/>
+<text x="32" y="1006" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">12</text>
+<text x="63" y="996" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Rank blockers, then material investigations,</text>
+<text x="63" y="1016" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">with reason, owner role and closure evidence</text>
+<circle cx="928.75" cy="1001.00" r="3.3" fill="#144e65"/><path d="M 928.75 1001.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 996.60 L 1104.25 1001.00 L 1096.25 1005.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+<line x1="24" y1="1085" x2="1196" y2="1085" stroke="#e5e9e9"/>
+<text x="32" y="1062" font-size="12" fill="#617078" font-weight="normal" text-anchor="start">13</text>
+<text x="63" y="1052" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">Attach conditional planning considerations and</text>
+<text x="63" y="1072" font-size="15" fill="#253941" font-weight="normal" text-anchor="start">the assumptions to check</text>
+<circle cx="928.75" cy="1057.00" r="3.3" fill="#144e65"/><path d="M 928.75 1057.00 H 1104.25" fill="none" stroke="#144e65" stroke-width="2.2"/><path d="M 1096.25 1052.60 L 1104.25 1057.00 L 1096.25 1061.40" fill="none" stroke="#144e65" stroke-width="2.2"/>
+</svg>
