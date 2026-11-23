@@ -1,23 +1,36 @@
-# External dependencies and the current constraint
+# External dependencies
 
-The current instruction excludes **all third-party licensed items**. Accordingly, no third-party parser, framework, library, model, sample application or copied code is approved for the product or its demonstrations. Public availability, open-source status and free pricing do not make an item license-free.
+A **dependency** in this guide is something outside the project that it would use to build, run or demonstrate the workbench. That includes a parser, framework, build tool, language runtime or sample application. It also includes the host environment when the license restriction applies to that environment. This meaning differs from the job and data connections discussed in the dependency graph guide.
 
-This creates a genuine implementation blocker: software runtimes, browsers, operating systems, databases and model services typically have license terms too. We cannot honestly promise a working software tool with no third-party licensed components simply by writing our own application code. We need the user to establish what underlying environment, if any, is outside this restriction before choosing a stack or building a runnable product.
+The project excludes **all third-party licensed items**, including software and sample applications offered under open-source licenses. The plan calls for original analyzers, UI assets, documentation and demo fixtures. The execution environment is still undecided. Existing installation by itself does not settle whether a tool can be used.
 
-| Previously suggested item | Current status |
-|---|---|
-| Streamlit, React, Cytoscape.js, external parsers | Excluded; no framework or parser selected. |
-| CardDemo and GenApp | Excluded. Create original synthetic fixtures, not derivative copies. |
-| Python, web browser and operating system | Not approved under the literal constraint; availability does not establish permission. |
-| SQLite | SQLite states its core code is public domain, but the exact distribution and bundled dependencies still need review; its status under the user’s restriction is unresolved. See [SQLite copyright](https://www.sqlite.org/copyright.html). |
-| Tachyon, its client and model | Not approved; user ownership of a client does not establish model, service or runtime licensing. Endpoint location and network behavior also remain unknown. |
-| Documentation and commercial product research | Background references only, not dependencies, source material to copy, or input artifacts. Verify any future use against the restriction. |
+## What the plan depends on
 
-## Runtime and network decisions
+| Item | Current position | What to establish |
+|---|---|---|
+| Host operating system, language runtime, build tools and browser | The execution boundary is unresolved. | Record the exact environment allowed for development, packaging and the demo. |
+| React, Streamlit, graph libraries and external parsers | Excluded under the current restriction. | Use original parser logic and UI assets in the permitted environment. |
+| Local storage | SQLite remains a candidate. The project also has a local file storage design. | Identify the exact SQLite distribution, any build tooling or bundled components and whether they fit the boundary. SQLite describes the deliverable library as public domain and distinguishes it from some licensed build scripts. [SQLite's copyright statement](https://www.sqlite.org/copyright.html) |
+| Third-party sample applications and copied material | Excluded. | Create and review the original Harbor Stock and Cedar Permits fixtures, including source, schedules and report examples. |
+| Tachyon client, endpoint and model | Conditional. It is optional for the assessment. | Confirm the client, model and execution environment fit the restriction. Establish whether the specified endpoint can run within the network boundary. |
+| Commercial references reviewed during planning | Background research. | Use original code, copy, visuals and examples in the deliverable. |
 
-1. Identify which pre-existing execution environment, if any, the user considers permitted, including runtime, operating system and browser.
-2. Obtain an explicit decision on the previously requested SQLite and Tachyon preferences; neither is assumed to be an exception.
-3. Select no dependency until its exact distribution, transitive components and applicable terms have been reviewed against that decision.
-4. Independently verify the deterministic assessment runs with outbound access blocked. A network-accessible Tachyon endpoint would additionally need an explicit exception to the no-network requirement.
+## What the offline requirement means
 
-A lack of dependencies in our application source is not proof that the execution stack has no third-party licenses. Until the environment is resolved, the plans specify interfaces and behavior rather than an approved runnable stack.
+```text
+WITHIN THE PERMITTED LOCAL ENVIRONMENT
+
+  Application export  →  Assessment engine  →  HTML and JSON
+                             │
+                             └─→ Local UI and evidence view
+
+
+OUTBOUND SERVICES
+
+  Remote downloads, external assets, telemetry and a remote
+  model endpoint are outside the deterministic workflow.
+```
+
+An offline report opens locally with the information it needs in the file. The assessment engine and local UI should also complete the workflow with outbound access blocked after setup. The validation plan calls for observing attempted requests as well as successful ones. A remotely hosted Tachyon endpoint would need an explicit change to the network requirement before use.
+
+The team can continue original fixture authoring, rubric design and UI specification while it resolves the execution environment. That decision is the first work package for a runnable build. The storage choice and optional model can be evaluated separately. [Implementation sequence](../plans/06-implementation-sequence.md) · [Offline validation](../plans/05-validation-and-demo.md)

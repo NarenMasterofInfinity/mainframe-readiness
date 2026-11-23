@@ -1,25 +1,88 @@
 # Implementation sequence
 
-1. **Foundation and spike:** create project skeleton and CLI; pin sample scopes; evaluate the first-party extractor against a small annotated fixture, source locations and offline execution. Confirm a compliant runtime before implementation.
-2. **Input and model:** implement ZIP/directory intake, safe extraction, artifact inventory, decoding, local persistence schema and run snapshots after the storage dependency is resolved.
-3. **Discovery:** implement supported COBOL/copybook/JCL paths and selected SQL/CICS references; preserve evidence and report unknowns and parse failures.
-4. **Assessment:** implement versioned dimensional rules, coverage, readiness gates and evidence-linked recommendations. Add reviewer notes and status.
-5. **UI and report:** implement intake, overview, graph/table, findings, actions and self-contained HTML/JSON export.
-6. **Optional AI:** connect Tachyon only if deployment constraints permit; implement one structured business-flow brief with evidence links and review status.
-7. **Validate and rehearse:** independently check fixtures, run both applications, test blocked-network operation and export, document licenses, limitations and reuse instructions.
+Build one end-to-end evidence path before expanding the syntax or polishing the UI. The first target is a literal JCL program reference, its original line, a related missing copybook, a confidence or readiness gap, a recommendation and an exported report from the same run.
 
-At each stage, complete a vertical slice before adding breadth. First milestone: one JCL → program → copybook or dataset path with source evidence and an exported finding. Do not add later features if the core evidence path is unreliable.
+## Work packages
 
-## Decision and quality gates
+Each owner is a role. Assign people after staffing and event duration are known. Effort is relative and used to order work, with no implied delivery date.
 
-**Gate 0 — environment:** resolve the third-party license restriction against the OS, runtime, browser, local store and optional model. No implementation dependency is approved by these plans. If unresolved, continue only dependency-free design and original fixture authoring.
+| ID | Depends on | Owner / effort | Work and deliverables | Exit |
+|---|---|---|---|---|
+| P0 | — | Lead / small | Record the exact allowed host/runtime/browser/build/storage boundary. Capture decision, rejected options and local run path. In parallel, assign work owners and agree on the first fixture and test-key ownership. | Executable work has an approved environment. Original fixture, contract and rubric work can continue while this decision is open. |
+| P1 | — | Analyst + SME / medium | Specify manifests for both original applications, author the first stock job and program, define expected nodes/edges/lines, prepare independent holdout and record intentional gaps. | First sample and independent expectations are reviewable. Fixture authoring follows the [validation plan](05-validation-and-demo.md). |
+| P2 | P0, P1 first cases | Engine / medium | Create the local runner, logical schema, inventory preview, safe admitted source reader, source map, run state and recoverable store. Implement inspect and stage diagnostics. | Same preview from equivalent ZIP and folder contents, failed intake has explicit reason, original locations survive normalization. |
+| P3 | P2 | Engine / medium | Implement initial lexical scanning, PROGRAM-ID, COPY, literal EXEC PGM, scoped definitions/resolver, evidence and one missing-target rubric rule. Implement machine-readable export for the slice. | Initial job-to-program and missing-copybook path survives assess → show → export. Independent expected record and source line pass. |
+| P4 | P3 | Engine / large | Expand supported COBOL, copybook, JCL, SQL and CICS/BMS subset. Implement step context, file binding, resource direction, ambiguity, typed non-code evidence, graph indices, impact queries and diagnostic catalog. | Stock and permits fixtures produce their expected paths and failures without sample-specific code. |
+| P5 | P3, stable P4 contracts | Analyst + engine / large | Implement dimension rules, confidence checks, readiness truth table, hotspot and gap ranking, and review projection. Make further rule changes versioned. | Rule corpus covers positive, negative and unknown. All material conclusions trace to signals, gaps and evidence. |
+| P6 | P3, P0 UI environment | UI / large | Start from saved report payload. Build intake, overview, accessible graph/table, impact and evidence views, review and export. Add child-run navigation and HTML report. Integrate with P4/P5 contracts as they stabilize. | An analyst can complete intake → finding → original evidence → action → export. Browser and reports run locally. |
+| P7 | P4, P5, P6 | QA + demo lead / medium | Freeze rubric and supported subset. Run held-out tests, both clean assessments and network observation. Compare the two Harbor Stock runs. Write operator reuse and limitations notes and rehearse. | Release criteria in [validation](05-validation-and-demo.md) pass. A failed criterion keeps the corresponding capability incomplete. |
+| P8 | P5, P6, separately cleared Tachyon | Optional / small | Configure a single optional modernization brief, compare model settings and run claim review. | Accepted candidate outputs include references, uncertainty and reviewer status. P7 proceeds independently. |
 
-**Gate 1 — evidence slice:** ingest a first-party fixture and trace one observed JCL statement through a resolved program to evidence. A DD-to-dataset binding is inferred only with supporting statements. Include at least one unresolved reference and parse diagnostic.
+Critical path is environment → inventory and evidence → first slice → broader evidence and rubric → integrated release. Fixture development and rubric review can begin alongside environment resolution. UI layout and sample report work can start against a documented report example. Keep the first release single-workstation and single-run to limit state and packaging work.
 
-**Gate 2 — meaningful assessment:** apply a documented rule and readiness gate, expose an unknown and generate a traceable recommendation. A reviewer can record disagreement without changing the original observation.
+## Work products and integration points
 
-**Gate 3 — end-to-end:** UI and exports expose the same run, source locations, limits and version data. Confirm no external assets or calls in the approved environment.
+Use first-party modules grouped by intake, analyzers, graph resolution, assessment, presentation and local storage. Keep the artifact schema, rule definitions and report version co-located with the owning modules. Use separate original fixture folders for development and held-out cases. Store local assessment output outside source inputs. Implementation commits should leave the existing path runnable in the approved environment and record breaking schema/rubric changes.
 
-**Gate 4 — reuse:** assess two independently authored fixture applications using the same engine and rules; document configuration differences and manual review. Validate against held-out annotations and list unresolved coverage.
+For each analyzer change, submit one supported case with an original location, one negative case and a published coverage note. For each rubric change, submit a fixture with the same evidence but a different completeness outcome. For each UI change, show how to reach the relevant evidence from the result. Integrate the two fixture paths as soon as the minimum analyzer set works so the second application can still reveal design assumptions.
 
-Optional AI and boundary exploration start only after their prerequisites are approved and must not block deterministic delivery. Assign owners and dates when staffing and hackathon duration are known; no schedule is assumed.
+The team hands off the manifest and non-code evidence template from intake to fixture authors, normalized records from the engine to assessment, the report contract from assessment to UI/export, and frozen rules plus fixtures to QA. Use one small report golden example as a shared integration contract. Reviewers should be able to trace a changed result to a rule or input revision.
+
+## Cut order if time is short
+
+Drop optional AI, visual snapshot diff, boundary exploration and graph polish first. Keep searchable relationships, graph and original evidence. Defer unsupported variants by recording their exact limits in the coverage screen and report. Preserve two runnable applications, breadth across code and non-code evidence, all three assessments, actionability and portability. If no execution environment is confirmed, complete the original fixture designs, rubric and UI/report contracts and report the executable dependency separately.
+
+## Reuse handoff
+
+The final operator guide must show the local setup and command or UI entry point, accepted file formats and limits, a manifest and evidence row example, how to add a new application, how to interpret partial analysis, how to review and rerun, and how to export. Provide an extension recipe that adds one analyzer or rule without rewriting the existing application workflow. A second operator should follow the guide with the second fixture during rehearsal.
+
+## Implementation tickets and integration tests
+
+Use this breakdown to assign work within the packages. Ticket names describe repo responsibilities without choosing a licensed runtime. If parallel work is available, divide items by owner and contract. Feature tests use the named cases in [validation](05-validation-and-demo.md).
+
+| Ticket | Parent | Depends on | Implementation output | Merge check |
+|---|---|---|---|---|
+| ENV-1 | P0 | — | Record host, runtime, build tools, browser and storage decision. Define local startup and outbound-blocked execution method. | A clean local startup path has an admissible environment and no unresolved needed dependency. |
+| CONTRACT-1 | P1/P2 | — | Freeze manifest v1, normalized records, evidence location, diagnostic envelope and report example. | An input and an output example are reviewable and every referenced ID is defined or explicitly illustrative. |
+| FIX-1 | P1 | CONTRACT-1 | Harbor Stock slice with one job/program/copybook chain, then full base and enrichment. Independent answer key held separately. | Two reviewers can locate the expected statements and describe open scope. |
+| FIX-2 | P1 | CONTRACT-1 | Cedar Permits package and independent variation. Specify model-free expected results. | Fixture workload, paths and names differ from Harbor Stock. |
+| IO-1 | P2 | ENV-1, CONTRACT-1 | Admission, staged hashing, file states and normalized logical paths. | IN-01 to IN-04 pass with no run publication on structural failure. |
+| IO-2 | P2 | IO-1 | Preview, classification and source maps with adjustments in the effective manifest. | IN-05 and AN-02 pass with path and original line preserved. |
+| RUN-1 | P2 | IO-1, CONTRACT-1 | Run journal, progress/status, artifact snapshots and local read model. | A failed or cancelled attempt remains inspectable without a completed export. |
+| PARSE-1 | P3 | FIX-1 slice, IO-2 | Narrow COBOL/COPY and JCL extraction, registration and diagnostic mapping. | One supported call or COPY and a negative lookalike are traceable. |
+| LINK-1 | P3 | PARSE-1, RUN-1 | Scoped identity index, reference statuses and first evidence-linked result. | One intentional missing reference stays unresolved. Export of the slice is readable. |
+| PARSE-2 | P4 | PARSE-1 | Copybook detail, JCL DD/procedure reference support and explicit unsupported cases, SQL/DDL and CICS/BMS. | AN-03 through AN-07 pass for declared supported forms. |
+| EVID-1 | P4 | CONTRACT-1, LINK-1 | Typed evidence reader, scoped statement links and conflict registration. | EV-01 and EV-02 preserve separate provenance and diagnostic. |
+| GRAPH-1 | P4 | LINK-1, PARSE-2 | Step-scoped bindings, graph indices, counts, impact paths and caps. | GR-01 through GR-03 pass and traversal modes are documented. |
+| RULE-1 | P5 | LINK-1, CONTRACT-1 | Evidence catalog, typed evaluator registration and initial dependency gap. | An invalid profile is rejected with rule/path context. A quote or comment cannot create a supported rule signal. |
+| SCORE-1 | P5 | RULE-1, EVID-1, GRAPH-1 | Full rubric, ranked hotspots, open gaps, suggested actions, and blockers. | AS-01 through AS-04 match the band/gate cases and prove that evidence can change one output independently. |
+| REV-1 | P5 | RUN-1, RULE-1 | Append-only review, stale revision handling and affected projection. | RV-01 preserves original snapshot and action history. |
+| UI-1 | P6 | ENV-1, CONTRACT-1, RUN-1 | Intake, run overview and inventory using the shared operation contract. | One real run is available after refresh with correct progress and data. |
+| UI-2 | P6 | UI-1, GRAPH-1, SCORE-1, REV-1 | Evidence and graph/table, impact, hot spots, gap actions and review. | The route from a gate or hotspot to its scoped source works by keyboard. |
+| REP-1 | P6 | CONTRACT-1, SCORE-1, UI-2 | Shared report rendering, local export and verified evidence references. | RP-01 and RP-02 pass. Export uses the selected review revision. |
+| DELTA-1 | P6/P7 | REP-1, FIX-1 enrichment | Child run entry and base/result links. Add an inline change table if time allows. | Evidence addition leaves the base intact and records both resolved and remaining questions. |
+| SHIP-1 | P7 | FIX-2, REP-1, DELTA-1 | Held-out evaluation, reuse and extension proof, offline checks, judge rehearsal. | RE-01 and RE-02 outcomes and limitations are recorded. |
+| BOUND-1 | Optional | GRAPH-1, UI-2 | Seeded boundary comparison and evidence caveats. | GR-04 passes. Candidate and analyst edit remain reviewable. |
+| AI-1 | P8 | ENV-1 plus Tachyon eligibility, REP-1 | One selected flow brief and display of evidence references and unsupported claims. | Independent optional-model checks pass. Core output stays available when it is disabled. |
+
+Where a ticket depends on “slice,” integrate that subset first. Keep separate branches or tasks small enough to merge while the shared case still runs. Every ticket closes with a working schema example, a documented limitation or test outcome. A screenshot without underlying source links does not complete an evidence feature.
+
+## Time-boxed execution options
+
+Use this three-day order only if it fits the event and available staffing. Rehearse actual performance before promising a schedule.
+
+| Window | Engineering focus | Demonstrable checkpoint |
+|---|---|---|
+| First two hours | Confirm execution decision, lock manifest/evidence vocabulary and goldens, assign owner roles | Everyone can name the first input, output and unsupported case. |
+| Day 1 | Work IO-1/2, PARSE-1/LINK-1 and the report skeleton; build both original fixture paths in parallel | Source input → inventory → one resolved and one unresolved edge → clickable source or CLI evidence → JSON slice. |
+| Day 2 | Extend parsers and typed evidence, add graph impact and rubric, connect UI to real results | Run Harbor Stock end to end, explain all three outputs and a blocker, export HTML/JSON. |
+| Day 3 | Reassess after new evidence, run Cedar Permits, finish validation, reuse, reporting and rehearsal | Judge path works offline, including second app and supported comparisons. Add optional candidates only if the baseline is stable. |
+
+For a shorter window, use a first-party report/table presentation where the approved browser supports it, narrow per-family syntax to the golden cases and keep the same underlying graph and evidence contracts. Prioritize original fixtures and the complete slice before parser breadth. The second application must remain a distinct application. Document actual non-code and online coverage even if it becomes limited. If the environment remains undecided, the contract examples and original test fixtures can advance independently.
+
+## Integration checks before each milestone
+
+- Run the current completed slice from the normal UI/CLI entry point and open a source-linked finding from an export.
+- Verify that every change carries the intended run, effective manifest and active review revision.
+- Recheck supported constructs with a negative test and record any scope reduction.
+- Publish the list of release work still open, including evidence limitations and prerequisite decisions. Optional work does not block the deterministic path.
