@@ -1,0 +1,1193 @@
+{
+  "prototype": true,
+  "assets": [
+    {
+      "id": "PAYMENT",
+      "type": "COBOL",
+      "loc": 8420,
+      "cc": 1240,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "PAYMENT.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "ACCOUNT",
+      "type": "COBOL",
+      "loc": 3610,
+      "cc": 620,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "ACCOUNT.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "VALIDATE",
+      "type": "COBOL",
+      "loc": 420,
+      "cc": 82,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "VALIDATE.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "REPORT",
+      "type": "COBOL",
+      "loc": 2100,
+      "cc": 190,
+      "domain": "Reporting",
+      "status": "Parsed",
+      "name": "REPORT.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "PAYHIST",
+      "type": "COBOL",
+      "loc": 1810,
+      "cc": 155,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "PAYHIST.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "PAYINIT",
+      "type": "COBOL",
+      "loc": 990,
+      "cc": 65,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "PAYINIT.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "BULKPMT",
+      "type": "COBOL",
+      "loc": 4300,
+      "cc": 760,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "BULKPMT.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "INQPAY",
+      "type": "COBOL",
+      "loc": 870,
+      "cc": 55,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "INQPAY.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "CUSTUPD",
+      "type": "COBOL",
+      "loc": 3350,
+      "cc": 420,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "CUSTUPD.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "CUSTINQ",
+      "type": "COBOL",
+      "loc": 950,
+      "cc": 74,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "CUSTINQ.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "ACCTOPEN",
+      "type": "COBOL",
+      "loc": 2700,
+      "cc": 290,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "ACCTOPEN.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "ACCTCLOS",
+      "type": "COBOL",
+      "loc": 1550,
+      "cc": 140,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "ACCTCLOS.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "INTEREST",
+      "type": "COBOL",
+      "loc": 5200,
+      "cc": 1080,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "INTEREST.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "LEDGER",
+      "type": "COBOL",
+      "loc": 6500,
+      "cc": 920,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "LEDGER.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "RECON",
+      "type": "COBOL",
+      "loc": 3000,
+      "cc": 380,
+      "domain": "Reporting",
+      "status": "Parsed",
+      "name": "RECON.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "DAILYREP",
+      "type": "COBOL",
+      "loc": 1600,
+      "cc": 98,
+      "domain": "Reporting",
+      "status": "Parsed",
+      "name": "DAILYREP.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "MONTHREP",
+      "type": "COBOL",
+      "loc": 1860,
+      "cc": 150,
+      "domain": "Reporting",
+      "status": "Parsed",
+      "name": "MONTHREP.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "AUDITLOG",
+      "type": "COBOL",
+      "loc": 640,
+      "cc": 40,
+      "domain": "Foundation",
+      "status": "Parsed",
+      "name": "AUDITLOG.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "DATEUTIL",
+      "type": "COBOL",
+      "loc": 220,
+      "cc": 15,
+      "domain": "Foundation",
+      "status": "Parsed",
+      "name": "DATEUTIL.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "ERRHAND",
+      "type": "COBOL",
+      "loc": 500,
+      "cc": 32,
+      "domain": "Foundation",
+      "status": "Parsed",
+      "name": "ERRHAND.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "TAXCALC",
+      "type": "PL/I",
+      "loc": 1200,
+      "cc": 110,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "TAXCALC.pli",
+      "kind": "Program"
+    },
+    {
+      "id": "SORTUTIL",
+      "type": "Assembler",
+      "loc": 400,
+      "cc": null,
+      "domain": "Foundation",
+      "status": "Partial",
+      "name": "SORTUTIL.asm",
+      "kind": "Program"
+    },
+    {
+      "id": "DYNROUTE",
+      "type": "COBOL",
+      "loc": 1150,
+      "cc": 125,
+      "domain": "Payments",
+      "status": "Partial",
+      "name": "DYNROUTE.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "LEGACY01",
+      "type": "COBOL",
+      "loc": 1800,
+      "cc": null,
+      "domain": "Customer core",
+      "status": "Failed",
+      "name": "LEGACY01.cbl",
+      "kind": "Program"
+    },
+    {
+      "id": "BATCH01",
+      "type": "JCL",
+      "loc": 120,
+      "cc": null,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "BATCH01.jcl",
+      "kind": "Job"
+    },
+    {
+      "id": "PAYJOB",
+      "type": "JCL",
+      "loc": 95,
+      "cc": null,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "PAYJOB.jcl",
+      "kind": "Job"
+    },
+    {
+      "id": "REPORTJOB",
+      "type": "JCL",
+      "loc": 110,
+      "cc": null,
+      "domain": "Reporting",
+      "status": "Parsed",
+      "name": "REPORTJOB.jcl",
+      "kind": "Job"
+    },
+    {
+      "id": "EODJOB",
+      "type": "JCL",
+      "loc": 140,
+      "cc": null,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "EODJOB.jcl",
+      "kind": "Job"
+    },
+    {
+      "id": "MONTHJOB",
+      "type": "JCL",
+      "loc": 85,
+      "cc": null,
+      "domain": "Reporting",
+      "status": "Parsed",
+      "name": "MONTHJOB.jcl",
+      "kind": "Job"
+    },
+    {
+      "id": "RECONJOB",
+      "type": "JCL",
+      "loc": 70,
+      "cc": null,
+      "domain": "Reporting",
+      "status": "Parsed",
+      "name": "RECONJOB.jcl",
+      "kind": "Job"
+    },
+    {
+      "id": "CUSTOMER-REC",
+      "type": "COPY",
+      "loc": 120,
+      "cc": null,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "CUSTOMER-REC.cpy",
+      "kind": "Copybook"
+    },
+    {
+      "id": "ACCOUNT-REC",
+      "type": "COPY",
+      "loc": 140,
+      "cc": null,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "ACCOUNT-REC.cpy",
+      "kind": "Copybook"
+    },
+    {
+      "id": "TRANS-REC",
+      "type": "COPY",
+      "loc": 95,
+      "cc": null,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "TRANS-REC.cpy",
+      "kind": "Copybook"
+    },
+    {
+      "id": "COMMON-ERR",
+      "type": "COPY",
+      "loc": 50,
+      "cc": null,
+      "domain": "Foundation",
+      "status": "Parsed",
+      "name": "COMMON-ERR.cpy",
+      "kind": "Copybook"
+    },
+    {
+      "id": "CUSTSCRN",
+      "type": "BMS",
+      "loc": 180,
+      "cc": null,
+      "domain": "Customer core",
+      "status": "Parsed",
+      "name": "CUSTSCRN.bms",
+      "kind": "Screen"
+    },
+    {
+      "id": "PAYSCREEN",
+      "type": "BMS",
+      "loc": 150,
+      "cc": null,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "PAYSCREEN.bms",
+      "kind": "Screen"
+    },
+    {
+      "id": "PAYPROC",
+      "type": "PROC",
+      "loc": 66,
+      "cc": null,
+      "domain": "Payments",
+      "status": "Parsed",
+      "name": "PAYPROC.proc",
+      "kind": "Procedure"
+    },
+    {
+      "id": "LEGACYPROC",
+      "type": "PROC",
+      "loc": 80,
+      "cc": null,
+      "domain": "Foundation",
+      "status": "Partial",
+      "name": "LEGACYPROC.proc",
+      "kind": "Procedure"
+    },
+    {
+      "id": "CUSTOMER",
+      "type": "DB2",
+      "loc": null,
+      "cc": null,
+      "domain": "Customer core",
+      "status": "Catalogued",
+      "name": "CUSTOMER",
+      "kind": "Data store"
+    },
+    {
+      "id": "ACCOUNTDB",
+      "type": "VSAM",
+      "loc": null,
+      "cc": null,
+      "domain": "Customer core",
+      "status": "Catalogued",
+      "name": "ACCOUNTDB",
+      "kind": "Data store"
+    },
+    {
+      "id": "TRANSFILE",
+      "type": "VSAM",
+      "loc": null,
+      "cc": null,
+      "domain": "Payments",
+      "status": "Catalogued",
+      "name": "TRANSFILE",
+      "kind": "Data store"
+    },
+    {
+      "id": "AUDITFILE",
+      "type": "Dataset",
+      "loc": null,
+      "cc": null,
+      "domain": "Foundation",
+      "status": "Catalogued",
+      "name": "AUDITFILE",
+      "kind": "Data store"
+    },
+    {
+      "id": "REPORTFILE",
+      "type": "Dataset",
+      "loc": null,
+      "cc": null,
+      "domain": "Reporting",
+      "status": "Catalogued",
+      "name": "REPORTFILE",
+      "kind": "Data store"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "from": "BATCH01",
+      "to": "PAYMENT",
+      "kind": "EXEC",
+      "stmt": "//STEP1 EXEC PGM=PAYMENT",
+      "line": 12,
+      "resolved": true
+    },
+    {
+      "id": 1,
+      "from": "BATCH01",
+      "to": "ACCOUNT",
+      "kind": "EXEC",
+      "stmt": "//STEP2 EXEC PGM=ACCOUNT",
+      "line": 18,
+      "resolved": true
+    },
+    {
+      "id": 2,
+      "from": "BATCH01",
+      "to": "REPORT",
+      "kind": "EXEC",
+      "stmt": "//STEP3 EXEC PGM=REPORT",
+      "line": 24,
+      "resolved": true
+    },
+    {
+      "id": 3,
+      "from": "PAYJOB",
+      "to": "PAYMENT",
+      "kind": "EXEC",
+      "stmt": "//STEP1 EXEC PGM=PAYMENT",
+      "line": 12,
+      "resolved": true
+    },
+    {
+      "id": 4,
+      "from": "PAYJOB",
+      "to": "BULKPMT",
+      "kind": "EXEC",
+      "stmt": "//STEP2 EXEC PGM=BULKPMT",
+      "line": 18,
+      "resolved": true
+    },
+    {
+      "id": 5,
+      "from": "REPORTJOB",
+      "to": "REPORT",
+      "kind": "EXEC",
+      "stmt": "//STEP1 EXEC PGM=REPORT",
+      "line": 12,
+      "resolved": true
+    },
+    {
+      "id": 6,
+      "from": "REPORTJOB",
+      "to": "DAILYREP",
+      "kind": "EXEC",
+      "stmt": "//STEP2 EXEC PGM=DAILYREP",
+      "line": 18,
+      "resolved": true
+    },
+    {
+      "id": 7,
+      "from": "EODJOB",
+      "to": "INTEREST",
+      "kind": "EXEC",
+      "stmt": "//STEP1 EXEC PGM=INTEREST",
+      "line": 12,
+      "resolved": true
+    },
+    {
+      "id": 8,
+      "from": "EODJOB",
+      "to": "LEDGER",
+      "kind": "EXEC",
+      "stmt": "//STEP2 EXEC PGM=LEDGER",
+      "line": 18,
+      "resolved": true
+    },
+    {
+      "id": 9,
+      "from": "MONTHJOB",
+      "to": "MONTHREP",
+      "kind": "EXEC",
+      "stmt": "//STEP1 EXEC PGM=MONTHREP",
+      "line": 12,
+      "resolved": true
+    },
+    {
+      "id": 10,
+      "from": "RECONJOB",
+      "to": "RECON",
+      "kind": "EXEC",
+      "stmt": "//STEP1 EXEC PGM=RECON",
+      "line": 12,
+      "resolved": true
+    },
+    {
+      "id": 11,
+      "from": "PAYMENT",
+      "to": "ACCOUNT",
+      "kind": "CALL",
+      "stmt": "CALL 'ACCOUNT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 12,
+      "from": "PAYMENT",
+      "to": "VALIDATE",
+      "kind": "CALL",
+      "stmt": "CALL 'VALIDATE'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 13,
+      "from": "PAYMENT",
+      "to": "PAYHIST",
+      "kind": "CALL",
+      "stmt": "CALL 'PAYHIST'",
+      "line": 134,
+      "resolved": true
+    },
+    {
+      "id": 14,
+      "from": "PAYMENT",
+      "to": "AUDITLOG",
+      "kind": "CALL",
+      "stmt": "CALL 'AUDITLOG'",
+      "line": 151,
+      "resolved": true
+    },
+    {
+      "id": 15,
+      "from": "BULKPMT",
+      "to": "PAYMENT",
+      "kind": "CALL",
+      "stmt": "CALL 'PAYMENT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 16,
+      "from": "BULKPMT",
+      "to": "VALIDATE",
+      "kind": "CALL",
+      "stmt": "CALL 'VALIDATE'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 17,
+      "from": "BULKPMT",
+      "to": "SORTUTIL",
+      "kind": "CALL",
+      "stmt": "CALL 'SORTUTIL'",
+      "line": 134,
+      "resolved": true
+    },
+    {
+      "id": 18,
+      "from": "INQPAY",
+      "to": "PAYMENT",
+      "kind": "CALL",
+      "stmt": "CALL 'PAYMENT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 19,
+      "from": "PAYINIT",
+      "to": "PAYMENT",
+      "kind": "CALL",
+      "stmt": "CALL 'PAYMENT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 20,
+      "from": "PAYINIT",
+      "to": "DATEUTIL",
+      "kind": "CALL",
+      "stmt": "CALL 'DATEUTIL'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 21,
+      "from": "ACCOUNT",
+      "to": "CUSTINQ",
+      "kind": "CALL",
+      "stmt": "CALL 'CUSTINQ'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 22,
+      "from": "ACCOUNT",
+      "to": "ERRHAND",
+      "kind": "CALL",
+      "stmt": "CALL 'ERRHAND'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 23,
+      "from": "ACCOUNT",
+      "to": "LEDGER",
+      "kind": "CALL",
+      "stmt": "CALL 'LEDGER'",
+      "line": 134,
+      "resolved": true
+    },
+    {
+      "id": 24,
+      "from": "LEDGER",
+      "to": "ACCOUNT",
+      "kind": "CALL",
+      "stmt": "CALL 'ACCOUNT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 25,
+      "from": "LEDGER",
+      "to": "AUDITLOG",
+      "kind": "CALL",
+      "stmt": "CALL 'AUDITLOG'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 26,
+      "from": "CUSTUPD",
+      "to": "ACCOUNT",
+      "kind": "CALL",
+      "stmt": "CALL 'ACCOUNT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 27,
+      "from": "CUSTUPD",
+      "to": "VALIDATE",
+      "kind": "CALL",
+      "stmt": "CALL 'VALIDATE'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 28,
+      "from": "ACCTOPEN",
+      "to": "ACCOUNT",
+      "kind": "CALL",
+      "stmt": "CALL 'ACCOUNT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 29,
+      "from": "ACCTOPEN",
+      "to": "CUSTUPD",
+      "kind": "CALL",
+      "stmt": "CALL 'CUSTUPD'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 30,
+      "from": "ACCTCLOS",
+      "to": "ACCOUNT",
+      "kind": "CALL",
+      "stmt": "CALL 'ACCOUNT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 31,
+      "from": "ACCTCLOS",
+      "to": "AUDITLOG",
+      "kind": "CALL",
+      "stmt": "CALL 'AUDITLOG'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 32,
+      "from": "INTEREST",
+      "to": "ACCOUNT",
+      "kind": "CALL",
+      "stmt": "CALL 'ACCOUNT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 33,
+      "from": "INTEREST",
+      "to": "LEDGER",
+      "kind": "CALL",
+      "stmt": "CALL 'LEDGER'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 34,
+      "from": "REPORT",
+      "to": "DATEUTIL",
+      "kind": "CALL",
+      "stmt": "CALL 'DATEUTIL'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 35,
+      "from": "RECON",
+      "to": "REPORT",
+      "kind": "CALL",
+      "stmt": "CALL 'REPORT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 36,
+      "from": "RECON",
+      "to": "SORTUTIL",
+      "kind": "CALL",
+      "stmt": "CALL 'SORTUTIL'",
+      "line": 117,
+      "resolved": true
+    },
+    {
+      "id": 37,
+      "from": "DAILYREP",
+      "to": "REPORT",
+      "kind": "CALL",
+      "stmt": "CALL 'REPORT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 38,
+      "from": "MONTHREP",
+      "to": "REPORT",
+      "kind": "CALL",
+      "stmt": "CALL 'REPORT'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 39,
+      "from": "TAXCALC",
+      "to": "DATEUTIL",
+      "kind": "CALL",
+      "stmt": "CALL 'DATEUTIL'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 40,
+      "from": "DYNROUTE",
+      "to": "VALIDATE",
+      "kind": "CALL",
+      "stmt": "CALL 'VALIDATE'",
+      "line": 100,
+      "resolved": true
+    },
+    {
+      "id": 41,
+      "from": "DYNROUTE",
+      "to": "WS-PROGRAM",
+      "kind": "DYNAMIC CALL",
+      "stmt": "CALL WS-PROGRAM USING WS-DATA",
+      "line": 178,
+      "resolved": false
+    },
+    {
+      "id": 42,
+      "from": "LEGACY01",
+      "to": "OLDMOD",
+      "kind": "CALL",
+      "stmt": "CALL 'OLDMOD'",
+      "line": 82,
+      "resolved": false
+    },
+    {
+      "id": 43,
+      "from": "PAYJOB",
+      "to": "PAYPROC",
+      "kind": "PROC",
+      "stmt": "//PAY EXEC PROC=PAYPROC",
+      "line": 6,
+      "resolved": true
+    },
+    {
+      "id": 44,
+      "from": "LEGACYPROC",
+      "to": "UNKNPROC",
+      "kind": "PROC",
+      "stmt": "//OLD EXEC PROC=UNKNPROC",
+      "line": 12,
+      "resolved": false
+    },
+    {
+      "id": 45,
+      "from": "PAYMENT",
+      "to": "TRANS-REC",
+      "kind": "COPY",
+      "stmt": "COPY TRANS-REC.",
+      "line": 28,
+      "resolved": true
+    },
+    {
+      "id": 46,
+      "from": "PAYMENT",
+      "to": "ACCOUNT-REC",
+      "kind": "COPY",
+      "stmt": "COPY ACCOUNT-REC.",
+      "line": 29,
+      "resolved": true
+    },
+    {
+      "id": 47,
+      "from": "PAYMENT",
+      "to": "MISSING-PAY",
+      "kind": "COPY",
+      "stmt": "COPY MISSING-PAY.",
+      "line": 30,
+      "resolved": false
+    },
+    {
+      "id": 48,
+      "from": "ACCOUNT",
+      "to": "ACCOUNT-REC",
+      "kind": "COPY",
+      "stmt": "COPY ACCOUNT-REC.",
+      "line": 28,
+      "resolved": true
+    },
+    {
+      "id": 49,
+      "from": "CUSTUPD",
+      "to": "CUSTOMER-REC",
+      "kind": "COPY",
+      "stmt": "COPY CUSTOMER-REC.",
+      "line": 28,
+      "resolved": true
+    },
+    {
+      "id": 50,
+      "from": "LEGACY01",
+      "to": "OLD-RECORD",
+      "kind": "COPY",
+      "stmt": "COPY OLD-RECORD.",
+      "line": 28,
+      "resolved": false
+    },
+    {
+      "id": 51,
+      "from": "ERRHAND",
+      "to": "COMMON-ERR",
+      "kind": "COPY",
+      "stmt": "COPY COMMON-ERR.",
+      "line": 28,
+      "resolved": true
+    },
+    {
+      "id": 52,
+      "from": "PAYHIST",
+      "to": "TRANS-REC",
+      "kind": "COPY",
+      "stmt": "COPY TRANS-REC.",
+      "line": 28,
+      "resolved": true
+    },
+    {
+      "id": 53,
+      "from": "REPORT",
+      "to": "TRANS-REC",
+      "kind": "COPY",
+      "stmt": "COPY TRANS-REC.",
+      "line": 28,
+      "resolved": true
+    },
+    {
+      "id": 54,
+      "from": "CUSTINQ",
+      "to": "CUSTSCRN",
+      "kind": "MAP",
+      "stmt": "EXEC CICS SEND MAP('CUSTSCRN') END-EXEC",
+      "line": 140,
+      "resolved": true
+    },
+    {
+      "id": 55,
+      "from": "INQPAY",
+      "to": "PAYSCREEN",
+      "kind": "MAP",
+      "stmt": "EXEC CICS SEND MAP('PAYSCREEN') END-EXEC",
+      "line": 140,
+      "resolved": true
+    },
+    {
+      "id": 56,
+      "from": "PAYMENT",
+      "to": "CUSTOMER",
+      "kind": "READ",
+      "stmt": "EXEC SQL SELECT BALANCE FROM CUSTOMER END-EXEC",
+      "line": 145,
+      "resolved": true
+    },
+    {
+      "id": 57,
+      "from": "PAYMENT",
+      "to": "ACCOUNTDB",
+      "kind": "WRITE",
+      "stmt": "REWRITE ACCOUNT-RECORD",
+      "line": 187,
+      "resolved": true
+    },
+    {
+      "id": 58,
+      "from": "PAYMENT",
+      "to": "TRANSFILE",
+      "kind": "WRITE",
+      "stmt": "WRITE TRANS-RECORD",
+      "line": 184,
+      "resolved": true
+    },
+    {
+      "id": 59,
+      "from": "BULKPMT",
+      "to": "TRANSFILE",
+      "kind": "WRITE",
+      "stmt": "WRITE TRANS-RECORD",
+      "line": 220,
+      "resolved": true
+    },
+    {
+      "id": 60,
+      "from": "PAYHIST",
+      "to": "TRANSFILE",
+      "kind": "READ",
+      "stmt": "READ TRANSFILE",
+      "line": 92,
+      "resolved": true
+    },
+    {
+      "id": 61,
+      "from": "REPORT",
+      "to": "TRANSFILE",
+      "kind": "READ",
+      "stmt": "READ TRANSFILE",
+      "line": 92,
+      "resolved": true
+    },
+    {
+      "id": 62,
+      "from": "RECON",
+      "to": "TRANSFILE",
+      "kind": "READ",
+      "stmt": "READ TRANSFILE",
+      "line": 115,
+      "resolved": true
+    },
+    {
+      "id": 63,
+      "from": "ACCOUNT",
+      "to": "ACCOUNTDB",
+      "kind": "READ",
+      "stmt": "READ ACCOUNT-FILE",
+      "line": 76,
+      "resolved": true
+    },
+    {
+      "id": 64,
+      "from": "ACCOUNT",
+      "to": "ACCOUNTDB",
+      "kind": "WRITE",
+      "stmt": "REWRITE ACCOUNT-RECORD",
+      "line": 130,
+      "resolved": true
+    },
+    {
+      "id": 65,
+      "from": "LEDGER",
+      "to": "ACCOUNTDB",
+      "kind": "WRITE",
+      "stmt": "REWRITE ACCOUNT-RECORD",
+      "line": 218,
+      "resolved": true
+    },
+    {
+      "id": 66,
+      "from": "CUSTUPD",
+      "to": "CUSTOMER",
+      "kind": "WRITE",
+      "stmt": "EXEC SQL UPDATE CUSTOMER SET STATUS = :WS-STATUS END-EXEC",
+      "line": 124,
+      "resolved": true
+    },
+    {
+      "id": 67,
+      "from": "CUSTINQ",
+      "to": "CUSTOMER",
+      "kind": "READ",
+      "stmt": "EXEC SQL SELECT NAME FROM CUSTOMER END-EXEC",
+      "line": 95,
+      "resolved": true
+    },
+    {
+      "id": 68,
+      "from": "AUDITLOG",
+      "to": "AUDITFILE",
+      "kind": "WRITE",
+      "stmt": "WRITE AUDIT-REC",
+      "line": 58,
+      "resolved": true
+    },
+    {
+      "id": 69,
+      "from": "DAILYREP",
+      "to": "REPORTFILE",
+      "kind": "WRITE",
+      "stmt": "WRITE REPORT-REC",
+      "line": 110,
+      "resolved": true
+    },
+    {
+      "id": 70,
+      "from": "MONTHREP",
+      "to": "REPORTFILE",
+      "kind": "READ",
+      "stmt": "READ REPORTFILE",
+      "line": 89,
+      "resolved": true
+    },
+    {
+      "id": 71,
+      "from": "PAYJOB",
+      "to": "TRANSFILE",
+      "kind": "DD",
+      "stmt": "//TRANSOUT DD DSN=BANK.TRANSFILE,DISP=SHR",
+      "line": 19,
+      "resolved": true
+    },
+    {
+      "id": 72,
+      "from": "REPORTJOB",
+      "to": "TRANSFILE",
+      "kind": "DD",
+      "stmt": "//TRANSIN DD DSN=BANK.TRANSFILE,DISP=SHR",
+      "line": 19,
+      "resolved": true
+    }
+  ],
+  "readiness": 81,
+  "subscores": [
+    [
+      "Code simplicity",
+      25,
+      77
+    ],
+    [
+      "Dependency independence",
+      25,
+      91
+    ],
+    [
+      "Data independence",
+      20,
+      60
+    ],
+    [
+      "Parser coverage",
+      20,
+      89
+    ],
+    [
+      "Target compatibility",
+      10,
+      95
+    ]
+  ],
+  "findings": [
+    {
+      "title": "2 missing copybooks",
+      "desc": "Referenced COPY members are absent from the inventory.",
+      "sev": "High",
+      "count": 2,
+      "route": "diagnostics",
+      "filter": "COPY",
+      "action": "Resolve copybooks"
+    },
+    {
+      "title": "2 very complex programs",
+      "desc": "McCabe complexity ≥ 1,000; review refactoring and tests.",
+      "sev": "High",
+      "count": 2,
+      "route": "complexity",
+      "filter": "Very complex",
+      "action": "Review programs"
+    },
+    {
+      "title": "1 unresolved dynamic calls",
+      "desc": "Runtime target cannot be determined from static analysis.",
+      "sev": "Medium",
+      "count": 1,
+      "route": "diagnostics",
+      "filter": "DYNAMIC CALL",
+      "action": "Validate targets"
+    },
+    {
+      "title": "2 unresolved modules",
+      "desc": "Static reference has no matching program or procedure.",
+      "sev": "High",
+      "count": 2,
+      "route": "diagnostics",
+      "filter": "Unresolved module",
+      "action": "Locate missing modules"
+    },
+    {
+      "title": "4 incomplete parses",
+      "desc": "Partial or failed parse; results may be incomplete.",
+      "sev": "Medium",
+      "count": 4,
+      "route": "diagnostics",
+      "filter": "Parse",
+      "action": "Review diagnostics"
+    },
+    {
+      "title": "1 cyclic dependency group",
+      "desc": "Mutually dependent programs should be considered together.",
+      "sev": "High",
+      "count": 1,
+      "route": "dependencies",
+      "filter": "cycle",
+      "action": "Inspect cycle"
+    },
+    {
+      "title": "2 shared mutable datasets",
+      "desc": "Multiple writers require a data ownership and cutover plan.",
+      "sev": "High",
+      "count": 2,
+      "route": "lineage",
+      "filter": "ACCOUNTDB",
+      "action": "Inspect data lineage"
+    }
+  ],
+  "cycles": [
+    [
+      "LEDGER",
+      "ACCOUNT"
+    ]
+  ]
+}
